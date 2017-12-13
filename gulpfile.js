@@ -1,33 +1,36 @@
 'use strict';
 
-let gulp = require('gulp');
-let plumber = require('gulp-plumber');
-let rename = require('gulp-rename');
-let header = require('gulp-header');
-let uglify = require('gulp-uglify');
-let concat = require('gulp-concat');
-let cleanCSS = require('gulp-clean-css');
-let sass = require('gulp-sass');
-let watch = require('gulp-watch');
-let runSequence = require('run-sequence');
-let imagemin = require('gulp-imagemin');
-let autoprefixer = require('gulp-autoprefixer');
-let livereload = require('gulp-livereload');
-let purify = require('gulp-purifycss');
+const gulp = require('gulp');
+const plumber = require('gulp-plumber');
+const rename = require('gulp-rename');
+const header = require('gulp-header');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const cleanCSS = require('gulp-clean-css');
+const sass = require('gulp-sass');
+const watch = require('gulp-watch');
+const runSequence = require('run-sequence');
+const imagemin = require('gulp-imagemin');
+const autoprefixer = require('gulp-autoprefixer');
+const livereload = require('gulp-livereload');
+const purify = require('gulp-purifycss');
+const shell = require('gulp-shell');
+const concatCSS = require('gulp-concat-css');
+const clean = require('gulp-clean');
 
-let banner = [
+const banner = [
 	'/**',
 	'/*!',
-	'Theme Name: wp-theme-prototype',
+	'Theme Name: jindatheme2018',
 	'Theme URI: http://www.jindatheme.com',
 	'Author: JindaTheme',
 	'Author URI: https://www.jindatheme.com',
-	'Description: Premium responsive WordPress theme for example.com',
+	'Description: Premium responsive WordPress theme for jindatheme.com',
 	'Version: 1.0',
 	'License: GNU General Public License v2 or later',
 	'License URI: http://www.gnu.org/licenses/gpl-2.0.html',
 	'Tags: responsive',
-	'Text Domain: wp-theme-prototype',
+	'Text Domain: jindatheme',
 	'*/',
 	''
 ].join('\n');
@@ -97,9 +100,10 @@ gulp.task('images', () => {
  *** uncomment this line below to let gulp compile to bootstrap.min.css
  */
 gulp.task('lib-scss', () => {
-	return gulp.src('').pipe(
-		shell([
-			// 'sass --scss -t compressed ./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss ./css/bootstrap.min.css'
+	return gulp.src(
+		'',
+		shell.task([
+			'sass --scss -t compressed ./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss ./css/bootstrap.min.css'
 		])
 	);
 });
@@ -112,8 +116,8 @@ gulp.task('lib-scss', () => {
 gulp.task('lib-css', () => {
 	return gulp
 		.src([
-			// './css/bootstrap.min.css',
-			// './node_modules/magnific-popup/dist/magnific-popup.css'
+			'./css/bootstrap.min.css',
+			'./node_modules/magnific-popup/dist/magnific-popup.css'
 		])
 		.pipe(concatCSS('vendor.css'))
 		.pipe(
@@ -146,4 +150,3 @@ gulp.task('default', ['scss', 'javascript', 'images', 'watch']);
 gulp.task('build-lib-css', () => {
 	runSequence('lib-scss', 'lib-css', 'lib-clean');
 });
-

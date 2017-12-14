@@ -64,7 +64,13 @@ gulp.task('scss', () => {
 
 gulp.task('javascript', () => {
 	return gulp
-		.src(['./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', './js/main.js'])
+		.src([
+			'./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', 
+			'./node_modules/jquery/dist/jquery.min.js',
+			'./node_modules/jquery-migrate/dist/jquery-migrate.min.js',
+			'./node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+			'./js/main.js'
+		])
 		.pipe(plumber())
 		.pipe(
 			concat('clients.js', {

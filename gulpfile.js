@@ -122,8 +122,7 @@ gulp.task('lib-scss', () => {
 gulp.task('lib-css', () => {
 	return gulp
 		.src([
-			'./css/bootstrap.min.css',
-			'./node_modules/magnific-popup/dist/magnific-popup.css'
+			'./css/bootstrap.min.css'
 		])
 		.pipe(concatCSS('vendor.css'))
 		.pipe(

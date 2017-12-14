@@ -11,12 +11,14 @@
 	  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-16x16.png">
 	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json">
 	  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/safari-pinned-tab.svg" color="#eac040">
-	  <meta name="theme-color" content="#ffffff">
+	  <meta name="theme-color" content="#eca040">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class() ?>>
 		<h1>Hello</h1>
 		<p>Thanks for using our starter theme!</p>
+		<?php wp_footer(); ?>
+
 		<?php wp_footer(); ?>
 	</body>
 </html>

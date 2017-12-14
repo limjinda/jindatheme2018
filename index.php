@@ -18,7 +18,5 @@
 		<h1>Hello</h1>
 		<p>Thanks for using our starter theme!</p>
 		<?php wp_footer(); ?>
-
-		<?php wp_footer(); ?>
 	</body>
 </html>

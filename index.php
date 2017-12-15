@@ -13,6 +13,7 @@
 					&nbsp;
 				</div>
 			</div>
+			<img src="<?php echo get_template_directory_uri() ?>/img/mockup-header.png" class="hero-image" alt="JindaTheme" />
 		</div>
 	</div>
 
@@ -31,7 +32,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="https://www.placehold.it/150x115" class="img-responsive" alt="Responsive website" />
+							<img src="<?php echo get_template_directory_uri() ?>/img/mockup-web.png" class="img-responsive" alt="Responsive website" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -45,7 +46,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="https://www.placehold.it/150x115" class="img-responsive" alt="Mobile App" />
+							<img src="<?php echo get_template_directory_uri() ?>/img/mockup-app.png" class="img-responsive" alt="Mobile App" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -59,7 +60,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="https://www.placehold.it/150x115" class="img-responsive" alt="Consulting" />
+							<img src="<?php echo get_template_directory_uri() ?>/img/mockup-consult.png" class="img-responsive" alt="Consulting" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -79,7 +80,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<img src="https://www.placehold.it/670x684" class="img-responsive work-imagery" alt="" />
+					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-work.jpg" class="img-responsive work-imagery" alt="Works" />
 				</div>
 				<div class="col-sm-5">
 					<div class="content">
@@ -88,18 +89,18 @@
 							It’s good to be a part of your successful, but we are over the moon when your customer says they love to use your web and mobile app.
 						</p>
 						<ul class="clients-list list-unstyled">
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
-							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/planetcomm.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/atreasurebox.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/gourmetmarket.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/dpx.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/bu.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/mahidol.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/maia.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/gettgo.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/evk.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/seatran.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/parkingduck.png" class="client-image" alt="client"></li>
+							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/cloudandthing.png" class="client-image" alt="client"></li>
 							<div class="clearfix"></div>
 						</ul>
 					</div>
@@ -184,7 +185,7 @@
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-irin.jpg" class="eq-content" alt="" />
 						<div class="content eq-content">
 							<p class="_name">Irin Unnakitti</p>
 							<p class="_title">Owner - A Treasure Box</p>
@@ -198,10 +199,10 @@
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-ratana.jpg" class="eq-content" alt="" />
 						<div class="content eq-content">
-							<p class="_name">Irin Unnakitti</p>
-							<p class="_title">Owner - A Treasure Box</p>
+							<p class="_name">Ratana Suwan</p>
+							<p class="_title">EVP - PlanetComm</p>
 							<p class="_description">
 								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
 							</p>
@@ -212,10 +213,10 @@
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-tanat.jpg" class="eq-content" alt="" />
 						<div class="content eq-content">
-							<p class="_name">Irin Unnakitti</p>
-							<p class="_title">Owner - A Treasure Box</p>
+							<p class="_name">Tanat Jakrawatana</p>
+							<p class="_title">Director - GettGo</p>
 							<p class="_description">
 								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
 							</p>
@@ -233,7 +234,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<h3 class="main-header">JindaTeam</h3>
-					<p class="lead">
+					<p>
 						We are young and passionate developer, who want to build a better software for the better internet.
 					</p>
 					<blockquote class="quote">
@@ -242,7 +243,7 @@
 					<p class="quote-by">— Steve Jobs</p>
 				</div>
 				<div class="col-sm-6">
-					<img src="https://www.placehold.it/635x436" class="img-responsive about-image" alt="About" />
+					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-team.jpg" class="img-responsive about-image" alt="About" />
 				</div>
 			</div>
 		</div>
@@ -253,7 +254,7 @@
 		<div id="map-canvas"></div>
 		<div class="map-contact">
 			<h3 class="main-header">Contact Us</h3>
-			<p class="lead">
+			<p>
 				29/73 Bangkokbulevard Chaengwattana Rd. Bang-Talad, Pakkred Nontaburi 11120 Thailand
 			</p>
 			<ul class="contact-list">
@@ -261,15 +262,16 @@
 				<li><strong>Tel:</strong> 095 1234 099</li>
 			</ul>
 			<ul class="social-list list-unstyled">
-				<li><a href="#"><img src="https://www.placehold.it/32x32" alt="Facebook"></a></li>
-				<li><a href="#"><img src="https://www.placehold.it/32x32" alt="Instagram"></a></li>
-				<li><a href="#"><img src="https://www.placehold.it/32x32" alt="Github"></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
 			</ul>
 			<ul class="addon-button-list list-unstyled">
-				<li><a href="#"><img src="https://www.placehold.it/153x40" alt="Add line"></a></li>
-				<li><a href="#"><img src="https://www.placehold.it/153x40" alt="DBD"></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
+				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/dbd-silver.png" alt="DBD"></a></li>
 			</ul>
 		</div>
+		<div class="clearfix"></div>
 	</div>
 </main>
 

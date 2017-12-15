@@ -1,6 +1,11 @@
 .hero-block {
 	background-image: linear-gradient(135deg, #2E3766 0%, #388C8F 100%);
 	padding: 200px 0 160px;
+	position: relative;
+	z-index: 1;
+	.container {
+		position: relative;
+	}
 	h2 {
 		color: $white;
 		font-weight: bold;
@@ -12,6 +17,16 @@
 		margin: 0;
 		font-size: 24px;
 		font-weight: normal;
+	}
+	.hero-image {
+		width: 800px;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 5px;
+		right: -8px;
 	}
 }
 
@@ -25,7 +40,7 @@
 		&:hover {
 			transform: translateY(-4px);
 			transition: all .2s linear;
-			box-shadow: 0 16px 32px -4px rgba(44,98,128,0.1);
+			box-shadow: 0 16px 32px -4px rgba(44,98,128,0.2);
 		}
 		figure {
 			display: block;
@@ -71,8 +86,8 @@
 	.work-imagery {
 		display: block;
 		position: absolute;
-		left: -64px;
-		top: 64px
+		left: -32px;
+		top: 8px
 	}
 	.clients-list {
 		margin: 0 0 80px;
@@ -82,13 +97,19 @@
 			float: left;
 			width: 25%;
 			margin: 0 0 8px;
+			.client-image {
+				display: block;
+				width: 111px;
+				height: 50px;
+			}
 		}
 	}
 }
 
 .portfolio-block {
 	position: relative;
-	background-color: $blue;
+	background-color: rgba(44, 98, 128, 0.98);
+	position: relative;
 	padding: 80px 0;
 }
 
@@ -177,5 +198,135 @@
 		display: block;
 		float: right;
 		border-radius: 0 4px 4px 0;
+	}
+}
+
+.about-block {
+	padding: 0;
+	background-color: $white;
+	position: relative;
+	.main-header {
+		margin-bottom: 24px;
+	}
+	.about-image {
+		position: relative;
+		right: -32px;
+	}
+	p {
+		font-size: 20px;
+		color: $coal;
+		margin: 0 0 32px;
+	}
+	blockquote.quote {
+		max-width: 470px;
+		border: 0;
+		padding: 16px 32px;
+		margin: 0 0 8px;
+		color: $coal;
+		font-size: 20px;
+		text-align: center;
+		position: relative;
+		&:before {
+			content: '“';
+			position: absolute;
+			font-size: 120px;
+			font-family: 'poppins';
+			color: $soft-grey;
+			top: -24px;
+			left: 0px;
+		}
+		&:after {
+			content: '”';
+			position: absolute;
+			font-size: 120px;
+			font-family: 'poppins';
+			color: $soft-grey;
+			top: -24px;
+			right: 0px;
+		}
+	}
+	.quote-by {
+		text-align: center;
+		color: #939A9E;
+		padding: 0;
+		margin: 0 0 0 -12px;
+		font-size: 16px;
+		max-width: 470px;
+	}
+}
+
+.map-block{
+	#map-canvas {
+		height: 535px;
+		width: 55%;
+		position: relative;
+		float: left;
+		border: 1px solid $bd;
+		border-width: 1px 1px 0 0;
+	}
+	.map-contact {
+		max-width: 480px;
+		float: left;
+		width: 45%;
+		padding: 64px 32px;
+	}
+	.main-header {
+		margin: 0 0 32px;
+	}
+	p {
+		font-size: 24px;
+		color: $coal;
+		line-height: 1.5;
+		margin: 0 0 32px;
+	}
+	.contact-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			font-size: 20px;
+			color: $coal;
+			margin: 0 0 8px;
+		}
+	}
+	.social-list {
+		padding: 0;
+		margin: 0 0 8px;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 2px;
+			padding: 0;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				display: block;
+			}
+			img {
+				width: 32px;
+				height: 32px;
+				display: block;
+			}
+		}
+	}
+	.addon-button-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin-right: 8px;
+			&:last-child {
+				margin-right: 0;
+			}
+			img {
+				height: 40px;
+				display: block;
+			}
+		}
 	}
 }

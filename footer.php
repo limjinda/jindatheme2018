@@ -2,7 +2,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-6">
-							<img src="<?php echo get_template_directory_uri() ?>/img/jindatheme-logo-white.png" class="footer-logo" alt="<?php bloginfo('name') ?>" />
+							<img src="<?php echo get_template_directory_uri() ?>/img/jindatheme-logo-black.png" class="footer-logo" alt="<?php bloginfo('name') ?>" />
 							<div class="footer-company">
 								<p>JindaTheme Company Limited</p>
 								<p><small>email: hello@jindatheme.com</small></p>

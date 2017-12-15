@@ -78,10 +78,10 @@
 	<div class="imagery-block">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8">
-					<img src="https://www.placehold.it/670x684" class="img-responsive" alt="" />
+				<div class="col-sm-7">
+					<img src="https://www.placehold.it/670x684" class="img-responsive work-imagery" alt="" />
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-5">
 					<div class="content">
 						<h3 class="main-header">Our Clients</h3>
 						<p>
@@ -100,6 +100,7 @@
 							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
 							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
 							<li><img src="https://www.placehold.it/111x50" class="client-image" alt="client"></li>
+							<div class="clearfix"></div>
 						</ul>
 					</div>
 				</div>
@@ -183,6 +184,7 @@
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
+						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
 						<div class="content eq-content">
 							<p class="_name">Irin Unnakitti</p>
 							<p class="_title">Owner - A Treasure Box</p>
@@ -190,12 +192,13 @@
 								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
 							</p>
 						</div>
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<div class="clearfix"></div>
 					</div>
 				</div>
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
+						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
 						<div class="content eq-content">
 							<p class="_name">Irin Unnakitti</p>
 							<p class="_title">Owner - A Treasure Box</p>
@@ -203,12 +206,13 @@
 								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
 							</p>
 						</div>
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<div class="clearfix"></div>
 					</div>
 				</div>
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
+						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
 						<div class="content eq-content">
 							<p class="_name">Irin Unnakitti</p>
 							<p class="_title">Owner - A Treasure Box</p>
@@ -216,7 +220,7 @@
 								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
 							</p>
 						</div>
-						<img src="https://www.placehold.it/140x262" class="eq-content" alt="" />
+						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
@@ -270,3 +274,5 @@
 </main>
 
 <?php get_footer(); ?>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq_YDQn6963EdIfS7WbiJpiR5MORtx7Q&callback=initMap"></script>

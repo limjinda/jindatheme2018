@@ -1,0 +1,181 @@
+.hero-block {
+	background-image: linear-gradient(135deg, #2E3766 0%, #388C8F 100%);
+	padding: 200px 0 160px;
+	h2 {
+		color: $white;
+		font-weight: bold;
+		font-size: 64px;
+		margin: 0 0 12px;
+	}
+	h3 {
+		color: $white;
+		margin: 0;
+		font-size: 24px;
+		font-weight: normal;
+	}
+}
+
+.featured-block {
+	margin: 0px auto 64px;
+	.featured-card {
+		background-color: $white;
+		padding: 32px 16px;
+		border-radius: 4px;
+		transition: all .2s linear;
+		&:hover {
+			transform: translateY(-4px);
+			transition: all .2s linear;
+			box-shadow: 0 16px 32px -4px rgba(44,98,128,0.1);
+		}
+		figure {
+			display: block;
+			margin: 0 auto 24px; 
+			padding: 0;
+			position: relative;
+			width: 150px;
+			height: 150px;
+			background-color: #EAEAEA;
+			border-radius: 50em;
+			img {
+				display: block;
+				margin: auto;
+				position: absolute;
+				top: 15px;
+			}
+		}
+		.featured-content {
+			._title {
+				font-size: 24px;
+				margin: 0 auto 8px;
+				font-weight: normal;
+				text-align: center;;
+			}
+			._description {
+				font-size: 16px;
+				line-height: 1.5;
+				color: $coal;
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.imagery-block {
+	position: relative;
+	p {
+		color: $coal;
+		font-size: 16px;
+		margin: 0 0 32px;
+	}
+	.work-imagery {
+		display: block;
+		position: absolute;
+		left: -64px;
+		top: 64px
+	}
+	.clients-list {
+		margin: 0 0 80px;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			width: 25%;
+			margin: 0 0 8px;
+		}
+	}
+}
+
+.portfolio-block {
+	position: relative;
+	background-color: $blue;
+	padding: 80px 0;
+}
+
+.portfolio-card {
+	figure {
+		display: block;
+		margin: 0 auto 24px;
+		img {
+			display: block;
+			border-radius: 4px;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+			transition: all .2s linear;
+			&:hover {
+				transition: all .2s linear;
+				transform: translateY(-4px);
+				box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+			}
+		}
+	}
+	.portfolio-content {
+		._title {
+			font-weight: bold;
+			font-size: 20px;
+			color: $white;
+			margin: 0 0 8px;
+		}
+		._category {
+			color: $soft-grey;
+			margin: 0 0 4px;
+		}
+		._link {
+			color: $orange;
+			font-size: 12px;
+			margin: 0;
+		}
+	}
+}
+
+.portfolio-card.invert {
+	figure {
+		margin: 24px auto 0;
+	}
+}
+
+.testimonial-block {
+	padding: 80px 0;
+	.main-header {
+		text-align: center;
+		margin-bottom: 32px;
+	}
+}
+
+.testimonial-card {
+	display: block;
+	margin: 0 auto 40px;
+	border-radius: 4px;
+	background-color: $white;
+	border: 1px solid $bd;
+	transition: all .2s linear;
+	&:hover {
+		box-shadow: 0 16px 32px 0 rgba(44,98,128,0.1);
+		transform: translateY(-4px);
+		transition: all .2s linear;
+		border: 1px solid transparent;
+	}
+	.content {
+		padding: 24px 16px;
+		margin: 0 140px 0 0;
+		._name {
+			font-size: 16px;
+			margin: 0 0 4px;
+			font-weight: bold;
+		}
+		._title {
+			font-size: 12px;
+			color: $grey;
+			margin: 0 0 24px;
+		}
+		._description {
+			color: $coal;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
+	img {
+		display: block;
+		float: right;
+		border-radius: 0 4px 4px 0;
+	}
+}

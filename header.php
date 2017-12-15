@@ -24,18 +24,18 @@
 						<div class="col-sm-3">
 							<div class="logo-block">
 								<a href="<?php home_url() ?>" title="<?php bloginfo('name') ?>">
-									<img src="https://www.placehold.it/386x90" class="site-logo img-responsive" alt="<?php bloginfo('name') ?>">
+									<img src="<?php echo get_template_directory_uri() ?>/img/jindatheme-logo-white.png" class="site-logo img-responsive" alt="<?php bloginfo('name') ?>">
 								</a>
 							</div>
 						</div>
 						<div class="col-sm-9">
 							<nav class="top-navigation">
-								<ul class="list-unstyled">
-									<li><a href="">Work</a></li>
-									<li><a href="">About</a></li>
-									<li><a href="">Blog</a></li>
-									<li><a href="#"><img src="https://www.placehold.it/24x16" alt="English" /></a></li>
-									<li><a href="#"><img src="https://www.placehold.it/24x16" alt="Thai" /></a></li>
+								<ul class="list-unstyled msr">
+									<?php wp_nav_menu( array(
+										'menu' => 'top',
+										'container' => false,
+										'menu_class' => 'list-unstyled menu'
+									)) ?>
 								</ul>
 							</nav>
 						</div>

@@ -1,0 +1,35 @@
+body, .pp {
+	font-family: 'poppins', arial, sans-serif;
+	color: $black;
+}
+
+h1,h2,h3,h4,h5,h6, label, .msr {
+	font-family: 'montserrat', arial, sans-serif;
+}
+
+#map-canvas {
+	height: 535px;
+	width: 100%;
+	position: relative;
+}
+
+.lead-section-block {
+	padding: 80px 0 40px;
+	background-color: $white;
+	text-align: center;
+	h1 {
+		font-weight: bold;
+		font-size: 56px;
+		margin: 0 auto 16px;
+	}
+	p {
+		font-size: 24px;
+		margin: 0 auto 40px;
+	}
+}
+
+.main-header {
+	font-size: 40px;
+	margin: 0 auto 16px;
+	font-weight: bold;
+}

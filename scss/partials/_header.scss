@@ -1,0 +1,50 @@
+body {
+	&.home {
+		.header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-image: none;
+		}
+	}
+}
+
+.header {
+	padding: 32px 0;
+	z-index: 999;
+	background-image: linear-gradient(135deg, #2E3766 0%, #388C8F 100%);
+}
+
+.logo-block {
+	img {
+		height: 45px;
+		display: block;
+	}
+}
+
+.top-navigation {
+	margin-top: 12px;
+	text-align: right;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			margin: 0 16px;
+			font-size: 16px;
+			font-weight: normal;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			a {
+				font-weight: bold;
+				padding: 0 0 2px;
+				color: $white;
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+	}
+}

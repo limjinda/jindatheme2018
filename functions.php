@@ -29,9 +29,13 @@ add_action( 'after_setup_theme', 'jindatheme_template_setup' );
 
 function jindatheme_register_scripts() {
 	wp_enqueue_style('vendor', get_theme_file_uri('/css/vendor.css'));
-	wp_enqueue_style( 'jindatheme-style', get_stylesheet_uri() );
-
-	wp_enqueue_script( 'client', get_theme_file_uri( '/js/clients.js' ), array('jquery'), '1.0.0', true );
+	wp_enqueue_style('jindatheme-style', get_stylesheet_uri());
+	wp_register_script('client', get_theme_file_uri( '/js/clients.js' ), array('jquery'), '1.0.0', true );
+	$js_variables = array(
+		'home_url' => get_template_directory_uri()
+	);
+	wp_localize_script( 'client', 'themeVariables', $js_variables );
+	wp_enqueue_script('client');
 }
 add_action('wp_enqueue_scripts', 'jindatheme_register_scripts');
 

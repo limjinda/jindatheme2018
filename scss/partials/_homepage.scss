@@ -57,6 +57,16 @@
 				position: absolute;
 				top: 15px;
 			}
+			#web_animate,
+			#app_animate,
+			#consult_animate{
+				position: absolute;
+				top: 20px;
+				margin: auto;
+				width: 150px;
+				height: 115px;
+				display: block;
+			}
 		}
 		.featured-content {
 			._title {

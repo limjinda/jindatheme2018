@@ -59,6 +59,7 @@ gulp.task('javascript', () => {
 	return gulp
 		.src([
 			'./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', 
+			'./js/bodymovin.js',
 			'./node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
 			'./node_modules/isotope-layout/dist/isotope.pkgd.min.js',
 			'./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',

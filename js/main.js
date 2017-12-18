@@ -80,6 +80,31 @@ var initMap = function() {
 };
 
 jQuery(document).ready(function() {
+
+	if ( jQuery('#web_animate').length > 0 ) {
+		var webAnimation = bodymovin.loadAnimation({
+			container: document.getElementById('web_animate'),
+			renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: themeVariables.home_url + '/animate/web/data.json'
+		});
+		var appAnimation = bodymovin.loadAnimation({
+			container: document.getElementById('app_animate'),
+			renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: themeVariables.home_url + '/animate/app/data.json'
+		});
+		var consultAnimation = bodymovin.loadAnimation({
+			container: document.getElementById('consult_animate'),
+			renderer: 'svg',
+		  loop: true,
+		  autoplay: true,
+		  path: themeVariables.home_url + '/animate/consult/data.json'
+		});
+	}
+
 	if (jQuery('.blog-list').length > 0) {
 		var grid = jQuery('.blog-list').isotope({
 			itemSelector: '.grid-item'
@@ -100,7 +125,9 @@ jQuery(document).ready(function() {
 	}
 });
 
-jQuery(window).load(function() {});
+jQuery(window).load(function() {
+
+});
 
 jQuery(document).on('click', '.blog-filter-bar ul li a', function(e) {
 	e.preventDefault();

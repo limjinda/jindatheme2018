@@ -77,6 +77,7 @@
 }
 
 .imagery-block {
+	padding: 40px 0 0;
 	position: relative;
 	p {
 		color: $coal;
@@ -155,7 +156,7 @@
 }
 
 .testimonial-block {
-	padding: 80px 0;
+	padding: 80px 0 40px;
 	.main-header {
 		text-align: center;
 		margin-bottom: 32px;
@@ -202,7 +203,7 @@
 }
 
 .about-block {
-	padding: 0;
+	padding: 40px 0 0;
 	background-color: $white;
 	position: relative;
 	.main-header {

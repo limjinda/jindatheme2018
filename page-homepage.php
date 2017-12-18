@@ -95,7 +95,7 @@
 	</div>
 
 	<!-- imagery -->
-	<div class="imagery-block">
+	<div class="imagery-block" id="works">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
@@ -129,7 +129,7 @@
 	</div>
 
 	<!-- portfolio -->
-	<div class="portfolio-block">
+	<div class="portfolio-block" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<?php if ( $portfolios->have_posts() ) : while ( $portfolios->have_posts() ) : $portfolios->the_post(); $portfolios_count++ ?>
@@ -153,7 +153,7 @@
 	</div>
 
 	<!-- testimonial -->
-	<div class="testimonial-block">
+	<div class="testimonial-block" id="testimonials">
 		<div class="container">
 			<h3 class="main-header">Testimonial</h3>
 			<div class="row">
@@ -176,7 +176,7 @@
 	</div>
 
 	<!-- about -->
-	<div class="about-block">
+	<div class="about-block" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6">

@@ -37,12 +37,8 @@ body {
 			font-weight: normal;
 			text-transform: uppercase;
 			letter-spacing: 0.3px;
-			&.current-menu-item {
-				a {
-					border-bottom: 2px solid $white;
-				}
-			}
 			a {
+				font-weight: bold;
 				padding: 0 0 2px;
 				color: $white;
 				&:hover {

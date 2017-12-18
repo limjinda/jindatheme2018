@@ -30,7 +30,6 @@
 				<?php
 					$filter_categories = get_categories();
 					$filter_array = array();
-					// array_push($filter_array, $filter->slug);
 				?>
 				<div class="blog-filter-bar">
 					<ul class="list-unstyled">
@@ -64,6 +63,7 @@
 						<?php } ?>
 					</div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 
 		</div>

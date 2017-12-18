@@ -5,13 +5,16 @@ body {
 			top: 0;
 			left: 0;
 			width: 100%;
+			background-color: transparent;
 		}
 	}
 }
 
 .header {
-	padding: 32px 0 0;
+	padding: 32px 0;
 	z-index: 999;
+	/* Rectangle: */
+	background-image: linear-gradient(135deg, #2E3766 0%, #388C8F 100%);
 }
 
 .logo-block {

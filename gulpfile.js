@@ -67,6 +67,7 @@ gulp.task('javascript', () => {
 		.src([
 			'./js/vendor/modernizr-2.8.3-respond-1.4.2.min.js', 
 			'./node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+			'./node_modules/isotope-layout/dist/isotope.pkgd.min.js',
 			'./js/main.js'
 		])
 		.pipe(plumber())

@@ -60,7 +60,7 @@ var initMap = function() {
 		{ name: 'Styled Map' }
 	);
 	var map = new google.maps.Map(document.getElementById('map-canvas'), {
-		zoom: 16,
+		zoom: 13,
 		center: jindatheme,
 		scrollwheel: false,
 		navigationControl: false,

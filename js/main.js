@@ -78,3 +78,13 @@ var initMap = function() {
 		optimized: false
 	});
 };
+
+jQuery(document).ready(function(){
+	
+});
+
+jQuery(window).load(function(){
+	if ( jQuery('.flat-card').length > 0 ) {
+		jQuery('.flat-card').matchHeight();
+	}
+});

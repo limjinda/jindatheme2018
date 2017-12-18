@@ -1,6 +1,12 @@
 <?php 
 	/* Template Name: Blogs */ 
 	get_header();
+	$blogs = new WP_Query( array(
+		'post_type' => 'post',
+		'posts_per_page' => -1,
+		'order' => 'desc',
+		'order_by' => 'date'
+	))
 ?>
 
 <main class="main">
@@ -35,15 +41,17 @@
 				<!-- blogs -->
 				<div class="blog-list">
 					<div class="row">
-						<?php for ($i = 0; $i < 8; $i++) { ?>
-							<div class="col-sm-3">
-								<div class="flat-card">
-									<a href="#"><img src="https://www.placehold.it/270x270" class="_image" alt="card" /></a>
-									<div class="_content">
-										<p><a href="#">หนังสือสัญญาของเราครอบคลุมอะไรบ้าง</a></p>
+						<?php if ($blogs->have_posts()) { ?>
+							<?php while ($blogs->have_posts()) { $blogs->the_post(); ?>
+								<div class="col-sm-3">
+									<div class="flat-card">
+										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="_image img-responsive" alt="card" /></a>
+										<div class="_content">
+											<p><a href="<?php the_permalink(); ?>" alt="<?php the_title(); ?>"><?php the_title(); ?></a></p>
+										</div>
 									</div>
 								</div>
-							</div>
+							<?php } wp_reset_postdata() ?>
 						<?php } ?>
 					</div>
 				</div>

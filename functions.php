@@ -51,4 +51,58 @@ function jindatheme_register_widget() {
 }
 add_action( 'widgets_init', 'jindatheme_register_widget' );
 
+/**
+ * Register a portfolio post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_work_init() {
+	$labels = array(
+		'name'               => _x( 'Works', 'post type general name', 'jindatheme' ),
+		'singular_name'      => _x( 'Work', 'post type singular name', 'jindatheme' ),
+		'menu_name'          => _x( 'Works', 'admin menu', 'jindatheme' ),
+		'name_admin_bar'     => _x( 'Work', 'add new on admin bar', 'jindatheme' ),
+		'add_new'            => _x( 'Add New', 'Work', 'jindatheme' ),
+		'add_new_item'       => __( 'Add New Work', 'jindatheme' ),
+		'new_item'           => __( 'New Work', 'jindatheme' ),
+		'edit_item'          => __( 'Edit Work', 'jindatheme' ),
+		'view_item'          => __( 'View Work', 'jindatheme' ),
+		'all_items'          => __( 'All works', 'jindatheme' ),
+		'search_items'       => __( 'Search works', 'jindatheme' ),
+		'parent_item_colon'  => __( 'Parent works:', 'jindatheme' ),
+		'not_found'          => __( 'No works found.', 'jindatheme' ),
+		'not_found_in_trash' => __( 'No works found in Trash.', 'jindatheme' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+    'description'        => __( 'Register a portfolio post type.', 'jindatheme' ),
+		'public'             => true,
+		'publicly_queryable' => false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => false,
+		'rewrite'            => false,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_icon'					 => 'dashicons-images-alt',
+		'menu_position'      => 1,
+		'supports'           => array( 'title', 'thumbnail' )
+	);
+
+	register_post_type( 'work', $args );
+}
+add_action( 'init', 'codex_work_init' );
+
+/**
+ * Hide some admin menu
+ * Dashboard and Comments
+ */
+function remove_menus(){
+  remove_menu_page( 'index.php' );                  
+  remove_menu_page( 'edit-comments.php' );          
+}
+add_action( 'admin_menu', 'remove_menus', 999 );
+
 ?>

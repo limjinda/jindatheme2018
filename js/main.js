@@ -79,12 +79,17 @@ var initMap = function() {
 	});
 };
 
-jQuery(document).ready(function(){
-	
+jQuery(document).ready(function() {
+	var grid = jQuery('.blog-list').isotope({
+		itemSelector: '.grid-item'
+	});
+
+	jQuery(document).on('click', '.blog-filter-bar ul li a', function() {
+		jQuery('.blog-filter-bar ul li').removeClass('active');
+		jQuery(this).parent('li').addClass('active');
+		var slug = jQuery(this).data('filter');
+		grid.isotope({ filter: slug });
+	});
 });
 
-jQuery(window).load(function(){
-	if ( jQuery('.flat-card').length > 0 ) {
-		jQuery('.flat-card').matchHeight();
-	}
-});
+jQuery(window).load(function() {});

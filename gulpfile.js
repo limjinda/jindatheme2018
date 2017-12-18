@@ -13,7 +13,6 @@ const runSequence = require('run-sequence');
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
 const livereload = require('gulp-livereload');
-const purify = require('gulp-purifycss');
 const shell = require('gulp-shell');
 const concatCSS = require('gulp-concat-css');
 const clean = require('gulp-clean');
@@ -51,12 +50,6 @@ gulp.task('scss', () => {
 			})
 		)
 		.pipe(rename('style.css'))
-		.pipe(
-			purify(['./**/*.php'], {
-				minify: true,
-				info: true
-			})
-		)
 		.pipe(header(banner))
 		.pipe(gulp.dest('./'))
 		.pipe(livereload());

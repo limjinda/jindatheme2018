@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col-sm-8">
 						<h2 class="page-title">Blog</h2>
-						<p>Sometime, we wrote about user experience, policies and products Hope it help you to clearly understand what we do and who we are :)</p>
+						<p>Sometime, we wrote about user experience, policies and products. Hope it help you to clearly understand what we do and who we are :)</p>
 					</div>
 					<div class="col-sm-4">
 						&nbsp;
@@ -27,15 +27,17 @@
 			
 			<div class="blog-content">
 				<!-- filter -->
+				<?php
+					$filter_categories = get_categories();
+					$filter_array = array();
+					// array_push($filter_array, $filter->slug);
+				?>
 				<div class="blog-filter-bar">
 					<ul class="list-unstyled">
 						<li class="active"><a href="javascript:void(0)" data-filter="*">All Categories</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">Hire Us</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">User Experience</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">Web development</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">Hosting and Domain</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">SEO</a></li>
-						<li><a href="javascript:void(0)" data-filter="*">Our Products</a></li>
+						<?php foreach ($filter_categories as $index => $filter) { ?>
+							<li><a href="javascript:void(0)" data-filter=".<?php echo $filter->slug ?>"><?php echo $filter->name ?></a></li>
+						<?php } ?>
 					</ul>
 				</div>
 				<!-- blogs -->
@@ -43,7 +45,14 @@
 					<div class="row">
 						<?php if ($blogs->have_posts()) { ?>
 							<?php while ($blogs->have_posts()) { $blogs->the_post(); ?>
-								<div class="col-sm-3">
+								<?php 
+									$categories = get_the_category(); 
+									$cate_array = array();
+									foreach ($categories as $cate) { 
+										array_push($cate_array, $cate->slug);
+									}
+								?>
+								<div class="col-sm-3 grid-item <?php echo join(' ', $cate_array); ?>" data-category="<?php echo join(' ', $cate_array); ?>">
 									<div class="flat-card">
 										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="_image img-responsive" alt="card" /></a>
 										<div class="_content">

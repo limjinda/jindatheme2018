@@ -149,4 +149,29 @@ function remove_menus(){
 }
 add_action( 'admin_menu', 'remove_menus', 999 );
 
+/**
+ * Add option page,
+ * This option will appear if using ACF Pro
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme Options',
+		'menu_title'	=> 'Theme Options',
+		'menu_slug' 	=> 'theme-options',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> true,
+		'icon_url'		=> 'dashicons-art'
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Social Networks',
+		'menu_title'	=> 'Social Networks',
+		'parent_slug'	=> 'theme-options',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Contact Info',
+		'menu_title'	=> 'Contact Info',
+		'parent_slug'	=> 'theme-options',
+	));
+}
+
 ?>

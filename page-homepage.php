@@ -5,7 +5,7 @@
 	$portfolios = new WP_Query( array(
 		'post_type' => 'works',
 		'posts_per_page' => 16,
-		'order' => 'desc',
+		'order' => 'asc',
 		'order_by' => 'date'
 	) );
 	$portfolios_count = 0;
@@ -134,7 +134,8 @@
 			<div class="row">
 				<?php if ( $portfolios->have_posts() ) : while ( $portfolios->have_posts() ) : $portfolios->the_post(); $portfolios_count++ ?>
 					<div class="col-sm-3">
-						<div class="portfolio-card <?php echo $portfolios_count % 2 == 0 ? 'invert' : '' ?>">
+						<?php if ($portfolios_count % 2 != 0): ?>
+						<div class="portfolio-card">
 							<figure>
 								<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
 									<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
@@ -146,6 +147,20 @@
 								<p class="_link"><?php the_field('link'); ?></p>
 							</div>
 						</div>
+						<?php else: ?>
+						<div class="portfolio-card invert">
+							<div class="portfolio-content">
+								<p class="_title"><?php the_title(); ?></p>
+								<p class="_category"><?php the_field('type'); ?></p>
+								<p class="_link"><?php the_field('link'); ?></p>
+							</div>
+							<figure>
+								<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
+									<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
+								</a>
+							</figure>
+						</div>
+						<?php endif ?>
 					</div>	
 				<?php endwhile; wp_reset_postdata(); endif; ?>
 			</div>

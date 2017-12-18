@@ -216,21 +216,27 @@
 		<div id="map-canvas"></div>
 		<div class="map-contact">
 			<h3 class="main-header">Contact Us</h3>
-			<p>
-				29/73 Bangkokbulevard Chaengwattana Rd. Bang-Talad, Pakkred Nontaburi 11120 Thailand
-			</p>
+			<p><?php the_field('address', 'option') ?></p>
 			<ul class="contact-list">
-				<li><strong>Email:</strong> hello@jindatheme.com</li>
-				<li><strong>Tel:</strong> 095 1234 099</li>
+				<li><strong>Email:</strong> <?php the_field('email', 'option') ?></li>
+				<li><strong>Tel:</strong> <?php the_field('phone_number', 'option') ?></li>
 			</ul>
 			<ul class="social-list list-unstyled">
-				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
-				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
-				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
+				<?php if (get_field('enable_facebook', 'option')): ?>
+					<li><a href="<?php the_field('facebook_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
+				<?php endif ?>
+				<?php if (get_field('enable_github', 'option')): ?>
+					<li><a href="<?php the_field('github_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
+				<?php endif ?>
+				<?php if (get_field('enable_instagram', 'option')): ?>
+					<li><a href="<?php the_field('instagram_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
+				<?php endif ?>
 			</ul>
 			<ul class="addon-button-list list-unstyled">
-				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
-				<li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/dbd-silver.png" alt="DBD"></a></li>
+				<?php if (get_field('enable_line', 'option')): ?>
+					<li><a href="<?php the_field('line_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
+				<?php endif; ?>
+				<li><a href="<?php the_field('dbd_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/dbd-silver.png" alt="DBD"></a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>

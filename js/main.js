@@ -90,6 +90,20 @@ jQuery(document).ready(function() {
 		var slug = jQuery(this).data('filter');
 		grid.isotope({ filter: slug });
 	});
+
+	if ( jQuery('.portfolio-block').length > 0 ) {
+		jQuery('.portfolio-block').magnificPopup({
+			delegate: 'a.image-popup',
+			type: 'image',
+			tLoading: 'Loading image #%curr%...',
+			gallery: {
+				enabled: true,
+				navigateByImgClick: true,
+				preload: [0,1]
+			}
+		});
+	}
+
 });
 
 jQuery(window).load(function() {});

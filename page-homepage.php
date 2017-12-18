@@ -3,12 +3,20 @@
 	get_header(); 
 
 	$portfolios = new WP_Query( array(
-		'post_type' => 'work',
+		'post_type' => 'works',
 		'posts_per_page' => 16,
 		'order' => 'desc',
 		'order_by' => 'date'
 	) );
 	$portfolios_count = 0;
+
+	$testimonials = new WP_Query( array( 
+		'post_type' => 'testimonials',
+		'posts_per_page' => 3,
+		'order' => 'asc',
+		'order_by' => 'date'
+	));
+
 ?>
 <main class="main">
 
@@ -128,8 +136,8 @@
 					<div class="col-sm-3">
 						<div class="portfolio-card <?php echo $portfolios_count % 2 == 0 ? 'invert' : '' ?>">
 							<figure>
-								<a href="#">
-									<img src="https://www.placehold.it/540x540" class="img-responsive" alt="" />
+								<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
+									<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
 								</a>
 							</figure>
 							<div class="portfolio-content">
@@ -149,48 +157,20 @@
 		<div class="container">
 			<h3 class="main-header">Testimonial</h3>
 			<div class="row">
+				<?php if ($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
-						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-irin.jpg" class="eq-content" alt="" />
+						<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : 'https://www.placehold.it/140x262' ?>" class="eq-content" alt="<?php the_title(); ?>" />
 						<div class="content eq-content">
-							<p class="_name">Irin Unnakitti</p>
-							<p class="_title">Owner - A Treasure Box</p>
-							<p class="_description">
-								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
-							</p>
+							<p class="_name"><?php the_title(); ?></p>
+							<p class="_title"><?php the_field('title') ?></p>
+							<p class="_description"><?php the_field('quote') ?></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
-				<!-- people card -->
-				<div class="col-sm-4">
-					<div class="testimonial-card">
-						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-ratana.jpg" class="eq-content" alt="" />
-						<div class="content eq-content">
-							<p class="_name">Ratana Suwan</p>
-							<p class="_title">EVP - PlanetComm</p>
-							<p class="_description">
-								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
-							</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<!-- people card -->
-				<div class="col-sm-4">
-					<div class="testimonial-card">
-						<img src="<?php echo get_template_directory_uri() ?>/img/testimonial-tanat.jpg" class="eq-content" alt="" />
-						<div class="content eq-content">
-							<p class="_name">Tanat Jakrawatana</p>
-							<p class="_title">Director - GettGo</p>
-							<p class="_description">
-								ทีมนี้เข้ามาแก้ไขปัญหาในการจองสินค้าอย่างดีที่สุดตามแบบที่เราต้องการทุกอย่าง มีความรับผิดชอบสูง ตรงเวลา ที่สำคัญเราสัมผัสได้ว่าเขาตั้งใจทำงานให้เราด้วยใจจริงๆ  
-							</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
+				<?php endwhile; wp_reset_postdata(); endif; ?>
 			</div>
 		</div>
 	</div>

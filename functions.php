@@ -57,7 +57,7 @@ add_action( 'widgets_init', 'jindatheme_register_widget' );
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
 function codex_work_init() {
-	$labels = array(
+	$work_labels = array(
 		'name'               => _x( 'Works', 'post type general name', 'jindatheme' ),
 		'singular_name'      => _x( 'Work', 'post type singular name', 'jindatheme' ),
 		'menu_name'          => _x( 'Works', 'admin menu', 'jindatheme' ),
@@ -74,10 +74,10 @@ function codex_work_init() {
 		'not_found_in_trash' => __( 'No works found in Trash.', 'jindatheme' )
 	);
 
-	$args = array(
-		'labels'             => $labels,
+	$work_args = array(
+		'labels'             => $work_labels,
     'description'        => __( 'Register a portfolio post type.', 'jindatheme' ),
-		'public'             => true,
+		'public'             => false,
 		'publicly_queryable' => false,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
@@ -91,9 +91,53 @@ function codex_work_init() {
 		'supports'           => array( 'title', 'thumbnail' )
 	);
 
-	register_post_type( 'work', $args );
+	register_post_type( 'works', $work_args );
 }
 add_action( 'init', 'codex_work_init' );
+
+/**
+ * Register a portfolio post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_testimonial_init() {
+	$testimonial_labels = array(
+		'name'               => _x( 'Testimonials', 'post type general name', 'jindatheme' ),
+		'singular_name'      => _x( 'Testimonial', 'post type singular name', 'jindatheme' ),
+		'menu_name'          => _x( 'Testimonials', 'admin menu', 'jindatheme' ),
+		'name_admin_bar'     => _x( 'Testimonial', 'add new on admin bar', 'jindatheme' ),
+		'add_new'            => _x( 'Add New', 'Testimonial', 'jindatheme' ),
+		'add_new_item'       => __( 'Add New Testimonial', 'jindatheme' ),
+		'new_item'           => __( 'New Testimonial', 'jindatheme' ),
+		'edit_item'          => __( 'Edit Testimonial', 'jindatheme' ),
+		'view_item'          => __( 'View Testimonial', 'jindatheme' ),
+		'all_items'          => __( 'All Testimonials', 'jindatheme' ),
+		'search_items'       => __( 'Search Testimonials', 'jindatheme' ),
+		'parent_item_colon'  => __( 'Parent Testimonials:', 'jindatheme' ),
+		'not_found'          => __( 'No testimonial found.', 'jindatheme' ),
+		'not_found_in_trash' => __( 'No testimonial found in Trash.', 'jindatheme' )
+	);
+
+	$testimonail_args = array(
+		'labels'             => $testimonial_labels,
+    'description'        => __( 'Register a testimonial post type.', 'jindatheme' ),
+		'public'             => false,
+		'publicly_queryable' => false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => false,
+		'rewrite'            => false,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_icon'					 => 'dashicons-format-status',
+		'menu_position'      => 2,
+		'supports'           => array( 'title', 'thumbnail' )
+	);
+
+	register_post_type( 'testimonials', $testimonail_args );
+}
+add_action( 'init', 'codex_testimonial_init' );
 
 /**
  * Hide some admin menu

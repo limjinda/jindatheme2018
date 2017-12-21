@@ -37,6 +37,40 @@ body {
 			font-weight: normal;
 			text-transform: uppercase;
 			letter-spacing: 0.3px;
+			&.wpml-ls-item-th {
+				margin-left: 16px;
+				margin-right: 4px;
+				background-color: transparent !important;
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				top: 3px;
+				img {
+					width: 24px;
+					height: 16px;
+					display: block;
+				}
+			}
+			&.wpml-ls-item-en {
+				margin-right: 0;
+				margin-left: 0;
+				background-color: transparent !important;
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				top: 3px;
+				img {
+					width: 24px;
+					height: 16px;
+					display: block;
+				}
+			}
+			&.wpml-ls-current-language {
+				pointer-events: none;
+				img {
+					opacity: 0.5;
+				}
+			}
 			a {
 				font-weight: bold;
 				padding: 0 0 2px;

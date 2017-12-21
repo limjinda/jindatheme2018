@@ -100,7 +100,7 @@ function codex_work_init() {
 add_action( 'init', 'codex_work_init' );
 
 /**
- * Register a portfolio post type.
+ * Register a testimonial post type.
  *
  * @link http://codex.wordpress.org/Function_Reference/register_post_type
  */
@@ -142,6 +142,50 @@ function codex_testimonial_init() {
 	register_post_type( 'testimonials', $testimonail_args );
 }
 add_action( 'init', 'codex_testimonial_init' );
+
+/**
+ * Register a portfolio post type.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/register_post_type
+ */
+function codex_client_init() {
+	$client_labels = array(
+		'name'               => _x( 'Clients', 'post type general name', 'jindatheme' ),
+		'singular_name'      => _x( 'Client', 'post type singular name', 'jindatheme' ),
+		'menu_name'          => _x( 'Clients', 'admin menu', 'jindatheme' ),
+		'name_admin_bar'     => _x( 'Client', 'add new on admin bar', 'jindatheme' ),
+		'add_new'            => _x( 'Add New', 'Client', 'jindatheme' ),
+		'add_new_item'       => __( 'Add New Client', 'jindatheme' ),
+		'new_item'           => __( 'New Client', 'jindatheme' ),
+		'edit_item'          => __( 'Edit Client', 'jindatheme' ),
+		'view_item'          => __( 'View Client', 'jindatheme' ),
+		'all_items'          => __( 'All Clients', 'jindatheme' ),
+		'search_items'       => __( 'Search Clients', 'jindatheme' ),
+		'parent_item_colon'  => __( 'Parent Clients:', 'jindatheme' ),
+		'not_found'          => __( 'No clients found.', 'jindatheme' ),
+		'not_found_in_trash' => __( 'No clients found in Trash.', 'jindatheme' )
+	);
+
+	$client_args = array(
+		'labels'             => $client_labels,
+    'description'        => __( 'Register a client post type.', 'jindatheme' ),
+		'public'             => false,
+		'publicly_queryable' => false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => false,
+		'rewrite'            => false,
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => false,
+		'menu_icon'					 => 'dashicons-welcome-learn-more',
+		'menu_position'      => 3,
+		'supports'           => array( 'title', 'thumbnail' )
+	);
+
+	register_post_type( 'clients', $client_args );
+}
+add_action( 'init', 'codex_client_init' );
 
 /**
  * Hide some admin menu

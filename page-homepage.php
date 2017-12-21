@@ -3,18 +3,25 @@
 	get_header(); 
 
 	$portfolios = new WP_Query( array(
-		'post_type' => 'works',
+		'post_type'      => 'works',
 		'posts_per_page' => 16,
-		'order' => 'asc',
-		'order_by' => 'date'
+		'order'          => 'asc',
+		'order_by'       => 'date'
 	) );
 	$portfolios_count = 0;
 
 	$testimonials = new WP_Query( array( 
-		'post_type' => 'testimonials',
+		'post_type'      => 'testimonials',
 		'posts_per_page' => 3,
-		'order' => 'asc',
-		'order_by' => 'date'
+		'order'          => 'asc',
+		'order_by'       => 'date'
+	));
+
+	$clients = new WP_Query(array(
+		'post_type'     => 'clients',
+		'posts_per_page' => 16,
+		'order'         => 'asc',
+		'order_by'      => 'date'
 	));
 
 ?>
@@ -108,18 +115,9 @@
 							It’s good to be a part of your successful, but we are over the moon when your customer says they love to use your web and mobile app.
 						</p>
 						<ul class="clients-list list-unstyled">
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/planetcomm.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/atreasurebox.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/gourmetmarket.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/dpx.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/bu.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/mahidol.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/maia.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/gettgo.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/evk.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/seatran.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/parkingduck.png" class="client-image" alt="client"></li>
-							<li><img src="<?php echo get_template_directory_uri() ?>/img/clients/cloudandthing.png" class="client-image" alt="client"></li>
+							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>
+								<li><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/115x50' ?>" class="client-image" alt="<?php the_title(); ?>"></li>
+							<?php endwhile; wp_reset_postdata(); endif; ?>
 							<div class="clearfix"></div>
 						</ul>
 					</div>

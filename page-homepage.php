@@ -39,7 +39,7 @@
 					&nbsp;
 				</div>
 			</div>
-			<img src="<?php echo get_template_directory_uri() ?>/img/mockup-header.png" class="hero-image" alt="JindaTheme" />
+			<img src="<?php echo get_template_directory_uri() ?>/img/hero-image.png" class="hero-image" alt="JindaTheme" />
 		</div>
 	</div>
 

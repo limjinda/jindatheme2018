@@ -106,7 +106,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-work.jpg" class="img-responsive work-imagery" alt="Works" />
+					<img src="<?php echo get_template_directory_uri() ?>/img/works-image.png" class="img-responsive work-imagery" alt="Works" />
 				</div>
 				<div class="col-sm-5">
 					<div class="content">
@@ -219,13 +219,13 @@
 			</ul>
 			<ul class="social-list list-unstyled">
 				<?php if (get_field('enable_facebook', 'option')): ?>
-					<li><a href="<?php the_field('facebook_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
+					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_github', 'option')): ?>
-					<li><a href="<?php the_field('github_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
+					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_instagram', 'option')): ?>
-					<li><a href="<?php the_field('instagram_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
+					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
 				<?php endif ?>
 			</ul>
 			<ul class="addon-button-list list-unstyled">

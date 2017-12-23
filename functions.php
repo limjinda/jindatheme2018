@@ -44,9 +44,9 @@ add_action('wp_enqueue_scripts', 'jindatheme_register_scripts');
  */
 function jindatheme_register_widget() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'twentyseventeen' ),
+		'name'          => __( 'Sidebar', 'jindatheme' ),
 		'id'            => 'blog-sidebar',
-		'description'   => __( 'Main blog sidebar', 'twentyseventeen' ),
+		'description'   => __( 'Main blog sidebar', 'jindatheme' ),
 		'before_widget' => '<section id="%1$s" class="sidebar-widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',

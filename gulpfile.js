@@ -63,6 +63,7 @@ gulp.task('javascript', () => {
 			'./node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
 			'./node_modules/isotope-layout/dist/isotope.pkgd.min.js',
 			'./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+			'./node_modules/owl.carousel/dist/owl.carousel.min.js',
 			'./js/main.js'
 		])
 		.pipe(plumber())
@@ -117,7 +118,9 @@ gulp.task('lib-css', () => {
 	return gulp
 		.src([
 			'./css/bootstrap.min.css',
-			'./node_modules/magnific-popup/dist/magnific-popup.css'
+			'./node_modules/magnific-popup/dist/magnific-popup.css',
+			'./node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+			'./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
 		])
 		.pipe(concatCSS('vendor.css'))
 		.pipe(

@@ -134,8 +134,9 @@
 			box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 			transition: all .2s linear;
 			&:hover {
+				position: relative;
 				transition: all .2s linear;
-				transform: translateY(-4px);
+				transform: translateY(2px);
 				box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 			}
 		}
@@ -162,6 +163,11 @@
 .portfolio-card.invert {
 	figure {
 		margin: 24px auto 0;
+		img {
+			&:hover {
+				transform: translateY(-2px);
+			}
+		}
 	}
 }
 

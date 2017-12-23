@@ -6,3 +6,33 @@ a {
 		text-decoration: none;
 	}
 }
+
+.owl-theme .owl-nav {
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	margin-top: -20px;
+	width: 100%;
+	img {
+		width: 24px;
+		height: 40px;
+		display: block;
+	}
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+	background-color: transparent;
+	&:hover {
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+
+.owl-prev {
+	position: absolute;
+	left: -80px;
+}
+
+.owl-next {
+	position: absolute;
+	right: -80px;
+}

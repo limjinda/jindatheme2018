@@ -146,7 +146,15 @@ jQuery(document).ready(function() {
 			navText: [
 				"<img src='" + themeVariables.home_url + "/img/nav-left.png' />",
 				"<img src='" + themeVariables.home_url + "/img/nav-right.png' />"
-			]
+			],
+			responsive: {
+				0 : {
+					items: 1,
+					dots: true,
+					nav: false,
+					autoplay: true
+				}
+			}
 		});
 	}
 
@@ -162,6 +170,12 @@ jQuery(document).ready(function() {
 				600
 			);
 		}
+	});
+
+	jQuery(document).on('click', '.mobile-navigation-button', function(e){
+		e.preventDefault();
+		jQuery(this).toggleClass('active');
+		jQuery('.top-navigation').find('ul').toggle();
 	});
 
 });

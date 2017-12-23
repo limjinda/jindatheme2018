@@ -36,23 +36,29 @@ body,
 }
 
 .lead-section-block {
-	padding: 120px 0 40px;
+	padding: 56px 0 24px;
+	// padding: 120px 0 40px;
 	background-color: $white;
 	text-align: center;
 	h1 {
+		font-size: 32px;
 		font-weight: bold;
-		font-size: 56px;
+		// font-size: 56px;
 		margin: 0 auto 16px;
 		@extend .msr;
 	}
 	p {
-		font-size: 24px;
-		margin: 0 auto 40px;
+		font-size: 16px;
+		margin: 0;
+		// font-size: 24px;
+		// margin: 0 auto 40px;
 	}
 }
 
 .main-header {
-	font-size: 40px;
+	font-size: 24px;
+	text-align: center;
+	// font-size: 40px;
 	margin: 0 auto 16px;
 	font-weight: bold;
 }

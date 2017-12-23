@@ -1,6 +1,7 @@
 .hero-block {
 	background-image: linear-gradient(135deg, #2E3766 0%, #388C8F 100%);
-	padding: 200px 0 160px;
+	padding: 120px 0 100px;
+	// padding: 200px 0 160px;
 	position: relative;
 	z-index: 1;
 	.container {
@@ -8,15 +9,17 @@
 	}
 	h2 {
 		color: $white;
+		font-size: 32px;
 		font-weight: bold;
-		font-size: 64px;
+		// font-size: 64px;
 		margin: 0 0 12px;
 		@extend .msr;
 	}
 	h3 {
 		color: $white;
 		margin: 0;
-		font-size: 24px;
+		font-size: 16px;
+		// font-size: 24px;
 		font-weight: normal;
 		@extend .msr;
 	}
@@ -27,16 +30,19 @@
 		display: block;
 		position: absolute;
 		z-index: 2;
-		top: -68px;
-		right: -48px;
+		top: 42px;
+		right: 16px;
+		// right: -48px;
 	}
 }
 
 .featured-block {
-	margin: 0px auto 64px;
+	margin: 0 auto 24px;
+	// margin: 0px auto 64px;
 	.featured-card {
 		background-color: $white;
-		padding: 32px 16px;
+		padding: 24px;
+		// padding: 32px 16px;
 		border-radius: 4px;
 		transition: all .2s linear;
 		&:hover {
@@ -49,36 +55,37 @@
 			margin: 0 auto 24px; 
 			padding: 0;
 			position: relative;
-			width: 150px;
-			height: 150px;
+			width: 100px;
+			height: 100px;
+			// width: 150px;
+			// height: 150px;
 			background-color: #EAEAEA;
 			border-radius: 50em;
-			img {
-				display: block;
-				margin: auto;
-				position: absolute;
-				top: 15px;
-			}
 			#web_animate,
 			#app_animate,
 			#consult_animate{
 				position: absolute;
-				top: 20px;
 				margin: auto;
-				width: 150px;
-				height: 115px;
+				width: 100px;
+				height: 76px;
+				top: 12px;
+				// top: 20px;
+				// width: 150px;
+				// height: 115px;
 				display: block;
 			}
 		}
 		.featured-content {
 			._title {
-				font-size: 24px;
+				font-size: 18px;
+				// font-size: 24px;
 				margin: 0 auto 8px;
 				font-weight: normal;
 				text-align: center;;
 			}
 			._description {
-				font-size: 16px;
+				font-size: 14px;
+				// font-size: 16px;
 				line-height: 1.5;
 				color: $coal;
 				text-align: center;
@@ -89,26 +96,28 @@
 }
 
 .imagery-block {
-	padding: 40px 0 0;
+	padding: 24px 0 0;
+	// padding: 40px 0 0;
 	position: relative;
 	p {
+		padding: 0 32px;
 		color: $coal;
-		font-size: 16px;
-		margin: 0 0 32px;
-	}
-	.work-imagery {
-		display: block;
-		position: absolute;
-		left: -32px;
-		top: -24px
+		font-size: 14px;
+		text-align: center;
+		margin: 0 0 24px;
+		// font-size: 16px;
+		// margin: 0 0 32px;
 	}
 	.clients-list {
-		margin: 0 0 80px;
+		text-align: center;
+		margin: 0 0 40px;
+		// margin: 0 0 80px;
 		padding: 0;
 		list-style: none;
 		li {
+			width: 33.33%;
 			float: left;
-			width: 25%;
+			// width: 25%;
 			margin: 0 0 8px;
 			.client-image {
 				display: block;
@@ -117,13 +126,22 @@
 			}
 		}
 	}
+	.work-imagery {
+		// display: block;
+		position: absolute;
+		left: -32px;
+		top: -24px;
+		display: none;
+	}
 }
 
 .portfolio-block {
 	position: relative;
-	background-color: rgba(44, 98, 128, 0.98);
+	background-color: $blue;
 	position: relative;
-	padding: 80px 0;
+	padding: 48px 24px;
+	// background-color: rgba(44, 98, 128, 0.98);
+	// padding: 80px 0;
 }
 
 .portfolio-card {
@@ -174,7 +192,8 @@
 }
 
 .testimonial-block {
-	padding: 80px 0 40px;
+	// padding: 80px 0 40px;
+	padding: 40px 0 24px;
 	.main-header {
 		text-align: center;
 		margin-bottom: 32px;
@@ -183,7 +202,8 @@
 
 .testimonial-card {
 	display: block;
-	margin: 0 auto 40px;
+	margin: 0 0 24px;
+	// margin: 0 auto 40px;
 	border-radius: 4px;
 	background-color: $white;
 	border: 1px solid $bd;
@@ -221,7 +241,8 @@
 }
 
 .about-block {
-	padding: 40px 0 0;
+	padding: 24px 0 0;
+	// padding: 40px 0 0;
 	background-color: $white;
 	position: relative;
 	.main-header {
@@ -229,27 +250,34 @@
 	}
 	.about-image {
 		position: relative;
-		right: -32px;
+		margin-top: 32px;
+		// right: -32px;
 	}
 	p {
-		font-size: 20px;
+		font-size: 16px;
+		text-align: center;
+		padding: 0 32px;
+		// font-size: 20px;
 		line-height: 1.6;
 		color: $coal;
 		margin: 0 0 32px;
 	}
 	blockquote.quote {
-		max-width: 470px;
+		// max-width: 470px;
 		border: 0;
-		padding: 16px 32px;
+		padding: 16px 32px 0;
+		// padding: 16px 32px;
 		margin: 0 0 8px;
 		color: $coal;
-		font-size: 20px;
+		font-size: 18px;
+		// font-size: 20px;
 		text-align: center;
 		position: relative;
 		&:before {
 			content: '“';
 			position: absolute;
-			font-size: 120px;
+			font-size: 64px;
+			// font-size: 120px;
 			font-family: 'poppins';
 			color: $soft-grey;
 			top: -24px;
@@ -258,7 +286,8 @@
 		&:after {
 			content: '”';
 			position: absolute;
-			font-size: 120px;
+			font-size: 64px;
+			// font-size: 120px;
 			font-family: 'poppins';
 			color: $soft-grey;
 			top: -24px;

@@ -38,15 +38,19 @@
 						</div>
 						<div class="col-sm-9">
 							<nav class="top-navigation">
-								<ul class="list-unstyled msr">
-									<?php wp_nav_menu( array(
-										'menu' => 'top',
-										'container' => false,
-										'menu_class' => 'list-unstyled menu'
-									)) ?>
-								</ul>
+								<?php wp_nav_menu( array(
+									'menu' => 'top',
+									'container' => false,
+									'menu_class' => 'list-unstyled msr menu'
+								)) ?>
 							</nav>
 						</div>
 					</div>
+					<!-- toggle nav -->
+					<a href="javascript:void(0)" class="mobile-navigation-button">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</a>
 				</div>
 			</header>

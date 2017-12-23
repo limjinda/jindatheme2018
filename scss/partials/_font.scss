@@ -30,3 +30,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'prompt';
+  src: url('fonts/prompt-regular.eot');
+  src: url('fonts/prompt-regular.eot?#iefix') format('embedded-opentype'), url('fonts/prompt-regular.woff2') format('woff2'), url('fonts/prompt-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'prompt';
+  src: url('fonts/prompt-semibold.eot');
+  src: url('fonts/prompt-semibold.eot?#iefix') format('embedded-opentype'), url('fonts/prompt-semibold.woff2') format('woff2'), url('fonts/prompt-semibold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

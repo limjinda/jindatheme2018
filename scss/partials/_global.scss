@@ -1,10 +1,38 @@
-body, .pp {
-	font-family: 'poppins', arial, sans-serif;
-	color: $black;
+html {
+	&[lang='th'] {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		label,
+		.top-navigation li,
+		.featured-content ._title,
+		.page-title,
+		.blog-filter-bar ul li a,
+		.footer-company p,
+		.footer-copyright p {
+			font-family: 'prompt', arial, sans-serif;
+		}
+	}
+	&[lang='en'] {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		label {
+			font-family: 'montserrat', arial, sans-serif;
+		}
+	}
 }
 
-h1,h2,h3,h4,h5,h6, label, .msr {
-	font-family: 'montserrat', arial, sans-serif;
+body,
+.pp {
+	font-family: 'poppins', arial, sans-serif;
+	color: $black;
 }
 
 .lead-section-block {
@@ -15,6 +43,7 @@ h1,h2,h3,h4,h5,h6, label, .msr {
 		font-weight: bold;
 		font-size: 56px;
 		margin: 0 auto 16px;
+		@extend .msr;
 	}
 	p {
 		font-size: 24px;
@@ -26,4 +55,12 @@ h1,h2,h3,h4,h5,h6, label, .msr {
 	font-size: 40px;
 	margin: 0 auto 16px;
 	font-weight: bold;
+}
+
+.prompt {
+	font-family: 'prompt', arial, sans-serif !important;
+}
+
+.msr {
+	font-family: 'montserrat', arial, sans-serif !important;
 }

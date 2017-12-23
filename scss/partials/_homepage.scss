@@ -11,12 +11,14 @@
 		font-weight: bold;
 		font-size: 64px;
 		margin: 0 0 12px;
+		@extend .msr;
 	}
 	h3 {
 		color: $white;
 		margin: 0;
 		font-size: 24px;
 		font-weight: normal;
+		@extend .msr;
 	}
 	.hero-image {
 		width: 800px;
@@ -231,6 +233,7 @@
 	}
 	p {
 		font-size: 20px;
+		line-height: 1.6;
 		color: $coal;
 		margin: 0 0 32px;
 	}

@@ -47,7 +47,7 @@
 	<div class="lead-section-block">
 		<div class="container">
 			<h1>JINDATHEME</h1>
-			<p>We create beautiful products people would love to use</p>
+			<p><?php _e('We create beautiful products people would love to use', 'jindatheme') ?></p>
 		</div>
 	</div>
 

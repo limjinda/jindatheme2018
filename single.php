@@ -17,8 +17,8 @@
 			<div class="blog-title">
 				<h2 class="page-title"><?php the_title(); ?></h2>
 				<p>
-					<span class="meta-date"><img src="<?php echo get_template_directory_uri() ?>/img/icon-publish.png" alt="Publish" /> Published: <?php echo get_the_date('d/m/Y') ?></span>
-					<span class="meta-category"><img src="<?php echo get_template_directory_uri() ?>/img/icon-folder.png" alt="Category" /> Category: <?php echo $category[0]->name ?></span>
+					<span class="meta-date"><img src="<?php echo get_template_directory_uri() ?>/img/icon-publish.png" alt="Publish" /> <?php _e('Published', 'jindatheme') ?>: <?php echo get_the_date('d/m/Y') ?></span>
+					<span class="meta-category"><img src="<?php echo get_template_directory_uri() ?>/img/icon-folder.png" alt="Category" /> <?php _e('Category', 'jindatheme') ?>: <?php echo $category[0]->name ?></span>
 				</p>
 			</div>
 
@@ -33,7 +33,7 @@
 						<!-- related -->
 						<?php if ($related_posts->have_posts()): ?>
 						<div class="related-block">
-							<h3>Related Posts</h3>
+							<h3><?php _e('Related Posts', 'jindatheme') ?></h3>
 							<div class="row">
 								<?php while ($related_posts->have_posts()): $related_posts->the_post(); ?>
 									<div class="col-sm-4">

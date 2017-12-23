@@ -16,8 +16,8 @@
 			<div class="blog-title">
 				<div class="row">
 					<div class="col-sm-8">
-						<h2 class="page-title">Blog</h2>
-						<p>Sometime, we wrote about user experience, policies and products. Hope it help you to clearly understand what we do and who we are :)</p>
+						<h2 class="page-title"><?php _e('Blog', 'jindatheme') ?></h2>
+						<p><?php _e('Sometime, we wrote about user experience, policies and products. Hope it help you to clearly understand what we do and who we are :)', 'jindatheme') ?></p>
 					</div>
 					<div class="col-sm-4">
 						&nbsp;
@@ -33,7 +33,7 @@
 				?>
 				<div class="blog-filter-bar">
 					<ul class="list-unstyled">
-						<li class="active"><a href="javascript:void(0)" data-filter="*">All Categories</a></li>
+						<li class="active"><a href="javascript:void(0)" data-filter="*"><?php _e('All Categories', 'jindatheme') ?></a></li>
 						<?php foreach ($filter_categories as $index => $filter) { ?>
 							<li><a href="javascript:void(0)" data-filter=".<?php echo $filter->slug ?>"><?php echo $filter->name ?></a></li>
 						<?php } ?>

@@ -4,6 +4,9 @@
 	// padding: 200px 0 160px;
 	position: relative;
 	z-index: 1;
+	@media #{$sm}{
+		padding: 160px 0;
+	}
 	.container {
 		position: relative;
 	}
@@ -14,6 +17,9 @@
 		// font-size: 64px;
 		margin: 0 0 12px;
 		@extend .msr;
+		@media #{$sm}{
+			font-size: 40px;
+		}
 	}
 	h3 {
 		color: $white;
@@ -22,6 +28,9 @@
 		// font-size: 24px;
 		font-weight: normal;
 		@extend .msr;
+		@media #{$sm}{
+			font-size: 20px;
+		}
 	}
 	.hero-image {
 		width: 860px;
@@ -33,6 +42,11 @@
 		top: 42px;
 		right: 16px;
 		// right: -48px;
+		@media #{$sm}{
+			width: 640px;
+			top: -20px;
+			right: 0;
+		}
 	}
 }
 
@@ -45,6 +59,9 @@
 		// padding: 32px 16px;
 		border-radius: 4px;
 		transition: all .2s linear;
+		@media #{$sm}{
+			padding: 24px 0px;
+		}
 		&:hover {
 			transform: translateY(-4px);
 			transition: all .2s linear;
@@ -57,10 +74,10 @@
 			position: relative;
 			width: 100px;
 			height: 100px;
-			// width: 150px;
-			// height: 150px;
 			background-color: #EAEAEA;
 			border-radius: 50em;
+			// width: 150px;
+			// height: 150px;
 			#web_animate,
 			#app_animate,
 			#consult_animate{
@@ -69,10 +86,10 @@
 				width: 100px;
 				height: 76px;
 				top: 12px;
+				display: block;
 				// top: 20px;
 				// width: 150px;
 				// height: 115px;
-				display: block;
 			}
 		}
 		.featured-content {
@@ -97,41 +114,60 @@
 
 .imagery-block {
 	padding: 24px 0 0;
-	// padding: 40px 0 0;
 	position: relative;
+	@media #{$sm}{
+		padding: 40px 0 0;
+	}
 	p {
 		padding: 0 32px;
 		color: $coal;
 		font-size: 14px;
 		text-align: center;
 		margin: 0 0 24px;
+		@media #{$sm}{
+			text-align: left;
+			padding: 0;
+		}
 		// font-size: 16px;
 		// margin: 0 0 32px;
 	}
 	.clients-list {
 		text-align: center;
 		margin: 0 0 40px;
-		// margin: 0 0 80px;
 		padding: 0;
 		list-style: none;
+		@media #{$sm}{
+			// margin: 0 0 80px;
+			margin: 0 0 24px;
+		}
 		li {
 			width: 33.33%;
 			float: left;
-			// width: 25%;
 			margin: 0 0 8px;
+			@media #{$sm}{
+				width: 25%;
+			}
 			.client-image {
 				display: block;
 				width: 111px;
 				height: 50px;
+				@media #{$sm}{
+					max-width: 100%;
+					height: auto;
+				}
 			}
 		}
 	}
 	.work-imagery {
-		// display: block;
 		position: absolute;
 		left: -32px;
 		top: -24px;
 		display: none;
+		@media #{$sm}{
+			display: block;
+			top: 0;
+			left: 0;
+		}
 	}
 }
 
@@ -140,7 +176,10 @@
 	background-color: $blue;
 	position: relative;
 	padding: 48px 24px;
-	// background-color: rgba(44, 98, 128, 0.98);
+	@media #{$sm}{
+		padding: 48px 0 32px;
+		background-color: rgba(44, 98, 128, 0.95);
+	}
 	// padding: 80px 0;
 }
 
@@ -194,6 +233,9 @@
 .testimonial-block {
 	// padding: 80px 0 40px;
 	padding: 40px 0 24px;
+	@media #{$sm}{
+		padding: 64px 0 40px;
+	}
 	.main-header {
 		text-align: center;
 		margin-bottom: 32px;
@@ -217,6 +259,9 @@
 	.content {
 		padding: 24px 16px;
 		margin: 0 140px 0 0;
+		@media #{$sm}{
+			margin: 0;
+		}
 		._name {
 			font-size: 16px;
 			margin: 0 0 4px;
@@ -226,6 +271,9 @@
 			font-size: 12px;
 			color: $grey;
 			margin: 0 0 24px;
+			@media #{$sm}{
+				margin: 0 0 12px;
+			}
 		}
 		._description {
 			color: $coal;
@@ -237,6 +285,9 @@
 		display: block;
 		float: right;
 		border-radius: 0 4px 4px 0;
+		@media #{$sm}{
+			display: none;
+		}
 	}
 }
 
@@ -261,37 +312,41 @@
 		line-height: 1.6;
 		color: $coal;
 		margin: 0 0 32px;
+		@media #{$sm}{
+			text-align: left;
+			padding: 0;
+		}
 	}
 	blockquote.quote {
-		// max-width: 470px;
 		border: 0;
 		padding: 16px 32px 0;
-		// padding: 16px 32px;
 		margin: 0 0 8px;
 		color: $coal;
 		font-size: 18px;
-		// font-size: 20px;
 		text-align: center;
 		position: relative;
+		// padding: 16px 32px;
+		// max-width: 470px;
+		// font-size: 20px;
 		&:before {
 			content: '“';
 			position: absolute;
 			font-size: 64px;
-			// font-size: 120px;
 			font-family: 'poppins';
 			color: $soft-grey;
 			top: -24px;
 			left: 0px;
+			// font-size: 120px;
 		}
 		&:after {
 			content: '”';
 			position: absolute;
 			font-size: 64px;
-			// font-size: 120px;
 			font-family: 'poppins';
 			color: $soft-grey;
 			top: -24px;
 			right: 0px;
+			// font-size: 120px;
 		}
 	}
 	.quote-by {
@@ -308,19 +363,22 @@
 	#map-canvas {
 		width: 100%;
 		height: 300px;
-		// height: 535px;
-		// width: 55%;
 		position: relative;
-		// float: left;
 		border: 1px solid $bd;
 		border-width: 1px 1px 0 0;
+		// height: 535px;
+		// width: 55%;
+		// float: left;
+		@media #{$sm}{
+			height: 350px;
+		}
 	}
 	.map-contact {
 		// max-width: 480px;
 		// float: left;
 		// width: 45%;
 		// padding: 64px 32px;
-		padding: 24px;
+		padding: 48px 24px;
 	}
 	.main-header {
 		margin: 16px auto 24px;
@@ -329,16 +387,24 @@
 	p {
 		font-size: 18px;
 		text-align: center;
-		// font-size: 24px;
 		color: $coal;
 		line-height: 1.5;
 		margin: 0 0 32px;
+		@media #{$sm}{
+			font-size: 20px;
+			text-align: left;
+			// font-size: 24px;
+			margin: 0 0 16px;
+		}
 	}
 	.contact-list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
 		text-align: center;
+		@media #{$sm}{
+			text-align: left;
+		}
 		li {
 			font-size: 18px;
 			// font-size: 20px;
@@ -351,6 +417,9 @@
 		margin: 0 0 8px;
 		list-style: none;
 		text-align: center;
+		@media #{$sm}{
+			text-align: left;
+		}
 		li {
 			display: inline-block;
 			margin: 0 2px;
@@ -376,6 +445,9 @@
 		padding: 0;
 		margin: 0;
 		text-align: center;
+		@media #{$sm}{
+			text-align: left;
+		}
 		li {
 			display: inline-block;
 			margin-right: 8px;
@@ -384,8 +456,10 @@
 			}
 			img {
 				height: 32px;
-				// height: 40px;
 				display: block;
+				@media #{$sm}{
+					height: 40px;
+				}
 			}
 		}
 	}

@@ -40,16 +40,26 @@ body,
 	// padding: 120px 0 40px;
 	background-color: $white;
 	text-align: center;
+	@media #{$sm}{
+		padding: 80px 0 4px;
+	}
 	h1 {
 		font-size: 32px;
 		font-weight: bold;
 		// font-size: 56px;
 		margin: 0 auto 16px;
 		@extend .msr;
+		@media #{$sm}{
+			font-size: 40px;
+		}
 	}
 	p {
 		font-size: 16px;
 		margin: 0;
+		@media #{$sm}{
+			font-size: 18px;
+			margin: 0 auto 40px;
+		}
 		// font-size: 24px;
 		// margin: 0 auto 40px;
 	}
@@ -61,6 +71,9 @@ body,
 	// font-size: 40px;
 	margin: 0 auto 16px;
 	font-weight: bold;
+	@media #{$sm}{
+		text-align: left;
+	}
 }
 
 .prompt {

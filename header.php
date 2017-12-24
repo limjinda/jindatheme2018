@@ -29,14 +29,14 @@
 			<header class="header">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-sm-4 col-md-3">
 							<div class="logo-block">
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name') ?>">
 									<img src="<?php echo get_template_directory_uri() ?>/img/jindatheme-logo-white.png" class="site-logo img-responsive" alt="<?php bloginfo('name') ?>">
 								</a>
 							</div>
 						</div>
-						<div class="col-sm-9">
+						<div class="col-sm-8 col-md-9">
 							<nav class="top-navigation">
 								<?php wp_nav_menu( array(
 									'menu' => 'top',

@@ -47,6 +47,11 @@ body {
 	height: 0;
 	overflow: hidden;
 	transition: all .5s linear;
+	@media #{$sm} { 
+		text-align: right;
+		height: auto !important;
+		overflow: initial !important;
+	}
 	&.active {
 		height: auto;
 		overflow: initial;
@@ -65,6 +70,15 @@ body {
 		opacity: 0;
 		visibility: hidden;
 		transition: all .3s linear;
+		@media #{$sm}{
+			visibility: visible !important;
+			display: block !important;
+			opacity: 1 !important;
+			background-color: transparent;
+			box-shadow: none;
+			margin: 10px 0 0;
+			padding: 0;
+		}
 		&.active {
 			// display: block;
 			opacity: 1;
@@ -75,19 +89,24 @@ body {
 		li {
 			display: block;
 			margin: 0;
-			// display: inline-block;
-			// margin: 0 16px;
 			font-size: 16px;
 			font-weight: normal;
 			text-transform: uppercase;
 			letter-spacing: 0.3px;
+			// margin: 0 16px;
+			@media #{$sm}{
+				display: inline-block;
+				margin: 0 12px;
+			}
 			a {
 				display: block;
 				padding: 10px;
 				font-weight: bold;
 				color: $blue;
-				// padding: 0 0 2px;
-				// color: $white;
+				@media #{$sm}{
+					padding: 0 0 2px;
+					color: $white;
+				}
 				&:hover {
 					color: $orange;
 				}
@@ -98,12 +117,17 @@ body {
 				vertical-align: top;
 				position: relative;
 				top: 3px;
+				@media #{$sm}{
+					top: 2px;
+				}
 				img {
 					width: 24px;
 					height: 16px;
 					display: block;
-					// box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 					transition: all .2s linear;
+					@media #{$sm}{
+						box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+					}
 					&:hover {
 						transition: all .2s linear;
 						box-shadow: 0 8px 16px rgba(0,0,0,0.1);
@@ -116,11 +140,15 @@ body {
 			}
 			&.wpml-ls-item-th {
 				margin: 8px 4px 12px 0px;
-				// margin-left: 16px;
-				margin-right: 4px;
+				@media #{$sm}{
+					margin: 0 4px 0 12px;
+				}
 			}
 			&.wpml-ls-item-en {
 				margin: 8px 0px 12px 0px;
+				@media #{$sm}{
+					margin: 0 0 0 0;
+				}
 			}
 			&.wpml-ls-current-language {
 				pointer-events: none;
@@ -141,6 +169,9 @@ body {
 	right: 15px;
 	top: 2px;
 	border-radius: 8px;
+	@media #{$sm}{
+		display: none !important;
+	}
 	.bar {
 		content: ' ';
 		height: 2px;

@@ -1,5 +1,7 @@
 'use strict';
 
+var scrollTimer;
+
 var initMap = function() {
 	var jindatheme = { lat: 13.902299, lng: 100.516311 };
 	var markerIcon = new google.maps.MarkerImage(
@@ -79,6 +81,15 @@ var initMap = function() {
 	});
 };
 
+var resizeFunction = function(){
+	var headerHeight = jQuery('.header').outerHeight();
+	if ( jQuery(window).scrollTop() > headerHeight ) {
+		jQuery('.header').addClass('fixed');
+	} else {
+		jQuery('.header').removeClass('fixed');
+	}
+}
+
 jQuery(document).ready(function() {
 
 	if ( jQuery('#web_animate').length > 0 ) {
@@ -155,6 +166,13 @@ jQuery(document).ready(function() {
 					nav: false,
 					autoplay: true,
 					loop: true
+				},
+				768 : {
+					items: 3,
+					dots: true,
+					nav: false,
+					autoplay: true,
+					loop: true
 				}
 			}
 		});
@@ -188,10 +206,6 @@ jQuery(window).load(function() {
 });
 
 jQuery(window).scroll(function(){
-	var headerHeight = jQuery('.header').outerHeight();
-	if ( jQuery(window).scrollTop() > headerHeight ) {
-		jQuery('.header').addClass('fixed');
-	} else {
-		jQuery('.header').removeClass('fixed');
-	}
-})
+	clearTimeout(scrollTimer);
+	scrollTimer = setTimeout(resizeFunction, 60);
+});

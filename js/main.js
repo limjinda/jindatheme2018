@@ -82,7 +82,7 @@ var initMap = function() {
 };
 
 var resizeFunction = function(){
-	var headerHeight = jQuery('.header').outerHeight();
+	var headerHeight = jQuery('.hero-block').outerHeight();
 	if ( jQuery(window).scrollTop() > headerHeight ) {
 		jQuery('.header').addClass('fixed');
 	} else {
@@ -173,6 +173,13 @@ jQuery(document).ready(function() {
 					nav: false,
 					autoplay: true,
 					loop: true
+				}, 
+				1200 : {
+					items: 4,
+					dots: false,
+					nav: true,
+					autoplay: true,
+					loop: true
 				}
 			}
 		});
@@ -207,5 +214,5 @@ jQuery(window).load(function() {
 
 jQuery(window).scroll(function(){
 	clearTimeout(scrollTimer);
-	scrollTimer = setTimeout(resizeFunction, 60);
+	scrollTimer = setTimeout(resizeFunction, 120);
 });

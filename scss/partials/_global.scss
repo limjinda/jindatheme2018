@@ -37,20 +37,30 @@ body,
 
 .lead-section-block {
 	padding: 56px 0 24px;
-	// padding: 120px 0 40px;
 	background-color: $white;
 	text-align: center;
 	@media #{$sm}{
 		padding: 80px 0 4px;
 	}
+	@media #{$md}{
+		padding: 120px 0 24px;
+	}
+	@media #{$lg}{
+		padding: 120px 0 48px;
+	}
 	h1 {
 		font-size: 32px;
 		font-weight: bold;
-		// font-size: 56px;
 		margin: 0 auto 16px;
 		@extend .msr;
 		@media #{$sm}{
 			font-size: 40px;
+		}
+		@media #{$md}{
+			font-size: 48px;
+		}
+		@media #{$lg}{
+			font-size: 56px;
 		}
 	}
 	p {
@@ -60,19 +70,29 @@ body,
 			font-size: 18px;
 			margin: 0 auto 40px;
 		}
-		// font-size: 24px;
-		// margin: 0 auto 40px;
+		@media #{$md}{
+			font-size: 20px;
+		}
+		@media #{$lg}{
+			font-size: 24px;
+			margin: 0 auto 24px;
+		}
 	}
 }
 
 .main-header {
 	font-size: 24px;
 	text-align: center;
-	// font-size: 40px;
 	margin: 0 auto 16px;
 	font-weight: bold;
 	@media #{$sm}{
 		text-align: left;
+	}
+	@media #{$md}{
+		font-size: 32px;
+	}
+	@media #{$lg}{
+		font-size: 40px;
 	}
 }
 

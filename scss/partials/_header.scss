@@ -10,8 +10,10 @@ body {
 				position: fixed;
 				background-image: linear-gradient(135deg, #2e3766 0%, #388c8f 100%);
 				padding: 16px 0;
-				// background-color: darken($blue, 10%);
 				box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+				@media #{$lg}{
+					padding: 32px 0;
+				}
 			}
 		}
 	}
@@ -19,9 +21,11 @@ body {
 
 .header {
 	padding: 24px 0;
-	// padding: 32px 0;
 	z-index: 999;
 	background-image: linear-gradient(135deg, #2e3766 0%, #388c8f 100%);
+	@media #{$md}{
+		padding: 32px 0;
+	}
 	.container {
 		position: relative;
 	}
@@ -38,14 +42,9 @@ body {
 }
 
 .top-navigation {
-	// display: none;
-	// margin: 12px 0 0;
-	text-align: center;
-	// margin-top: 4px;
-	// text-align: right;
-	// margin-top: 12px;
 	height: 0;
 	overflow: hidden;
+	text-align: center;
 	transition: all .5s linear;
 	@media #{$sm} { 
 		text-align: right;
@@ -61,9 +60,6 @@ body {
 		list-style: none;
 		padding: 12px 0;
 		margin: 12px 0 8px;
-		// padding: 0;
-		// margin: 0;
-		// display: none;
 		background-color: rgba(255,255,255,0.97);
 		border-radius: 8px;
 		box-shadow: 0 12px 20px rgba(0,0,0,0.2);
@@ -79,8 +75,10 @@ body {
 			margin: 10px 0 0;
 			padding: 0;
 		}
+		@media #{$md}{
+			margin: 12px 0 0;
+		}
 		&.active {
-			// display: block;
 			opacity: 1;
 			visibility: visible;
 			transition: all .3s linear;
@@ -93,10 +91,12 @@ body {
 			font-weight: normal;
 			text-transform: uppercase;
 			letter-spacing: 0.3px;
-			// margin: 0 16px;
 			@media #{$sm}{
 				display: inline-block;
 				margin: 0 12px;
+			}
+			@media #{$md}{
+				margin: 0 16px;
 			}
 			a {
 				display: block;
@@ -142,6 +142,9 @@ body {
 				margin: 8px 4px 12px 0px;
 				@media #{$sm}{
 					margin: 0 4px 0 12px;
+				}
+				@media #{$md}{
+					margin: 0 4px 0 16px;
 				}
 			}
 			&.wpml-ls-item-en {

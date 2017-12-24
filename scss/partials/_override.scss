@@ -36,3 +36,17 @@ a {
 	position: absolute;
 	right: -80px;
 }
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+	margin-top: 16px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 8px;
+	height: 8px;
+	background: $grey;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: $white;
+}

@@ -6,6 +6,11 @@ body {
 			left: 0;
 			width: 100%;
 			background-image: none;
+			&.fixed {
+				position: fixed;
+				background-color: $blue;
+				box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			}
 		}
 	}
 }
@@ -28,20 +33,40 @@ body {
 }
 
 .top-navigation {
-	margin: 12px 0 0;
+	// display: none;
+	// margin: 12px 0 0;
 	text-align: center;
 	// margin-top: 4px;
 	// text-align: right;
 	// margin-top: 12px;
+	height: 0;
+	overflow: hidden;
+	transition: all .5s linear;
+	&.active {
+		height: auto;
+		overflow: initial;
+		transition: all .5s linear;
+	}
 	ul {
 		list-style: none;
 		padding: 12px 0;
+		margin: 16px 0 0;
 		// padding: 0;
-		margin: 0;
-		display: none;
+		// margin: 0;
+		// display: none;
 		background-color: rgba(255,255,255,0.97);
 		border-radius: 8px;
 		box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s linear;
+		&.active {
+			// display: block;
+			opacity: 1;
+			visibility: visible;
+			transition: all .3s linear;
+			transform: translateY(4px);
+		}
 		li {
 			display: block;
 			margin: 0;

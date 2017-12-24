@@ -306,24 +306,30 @@
 
 .map-block{
 	#map-canvas {
-		height: 535px;
-		width: 55%;
+		width: 100%;
+		height: 300px;
+		// height: 535px;
+		// width: 55%;
 		position: relative;
-		float: left;
+		// float: left;
 		border: 1px solid $bd;
 		border-width: 1px 1px 0 0;
 	}
 	.map-contact {
-		max-width: 480px;
-		float: left;
-		width: 45%;
-		padding: 64px 32px;
+		// max-width: 480px;
+		// float: left;
+		// width: 45%;
+		// padding: 64px 32px;
+		padding: 24px;
 	}
 	.main-header {
-		margin: 0 0 32px;
+		margin: 16px auto 24px;
+		// margin: 0 0 32px;
 	}
 	p {
-		font-size: 24px;
+		font-size: 18px;
+		text-align: center;
+		// font-size: 24px;
 		color: $coal;
 		line-height: 1.5;
 		margin: 0 0 32px;
@@ -332,8 +338,10 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		text-align: center;
 		li {
-			font-size: 20px;
+			font-size: 18px;
+			// font-size: 20px;
 			color: $coal;
 			margin: 0 0 8px;
 		}
@@ -342,6 +350,7 @@
 		padding: 0;
 		margin: 0 0 8px;
 		list-style: none;
+		text-align: center;
 		li {
 			display: inline-block;
 			margin: 0 2px;
@@ -366,6 +375,7 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		text-align: center;
 		li {
 			display: inline-block;
 			margin-right: 8px;
@@ -373,7 +383,8 @@
 				margin-right: 0;
 			}
 			img {
-				height: 40px;
+				height: 32px;
+				// height: 40px;
 				display: block;
 			}
 		}

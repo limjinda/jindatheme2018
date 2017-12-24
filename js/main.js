@@ -129,14 +129,15 @@ jQuery(document).ready(function() {
 			gallery: {
 				enabled: true,
 				navigateByImgClick: true,
-				preload: [0, 1]
+				preload: [0, 1],
+				tCounter: ''
 			}
 		});
 	}
 
 	if ( jQuery('.owl-carousel').length > 0 ) {
 		jQuery('.owl-carousel').owlCarousel({
-			loop: false,
+			loop: true,
 			margin: 30,
 			items: 4,
 			dots: false,
@@ -152,7 +153,8 @@ jQuery(document).ready(function() {
 					items: 1,
 					dots: true,
 					nav: false,
-					autoplay: true
+					autoplay: true,
+					loop: true
 				}
 			}
 		});
@@ -160,12 +162,13 @@ jQuery(document).ready(function() {
 
 	jQuery(document).on('click', '.nav-scroll-link a', function(e) {
 		var section = jQuery(this).attr('title');
+		var headerHeight = jQuery('.header').outerHeight();
 		if ( jQuery('#' + section).length > 0 ) {
 			e.preventDefault();
 			var positionFromTop = jQuery('#' + section).offset().top;
 			jQuery('html, body').stop().animate(
 				{
-					scrollTop: positionFromTop
+					scrollTop: positionFromTop - headerHeight
 				},
 				600
 			);
@@ -175,7 +178,7 @@ jQuery(document).ready(function() {
 	jQuery(document).on('click', '.mobile-navigation-button', function(e){
 		e.preventDefault();
 		jQuery(this).toggleClass('active');
-		jQuery('.top-navigation').find('ul').toggle();
+		jQuery('.top-navigation, .top-navigation ul').toggleClass('active');
 	});
 
 });
@@ -183,3 +186,12 @@ jQuery(document).ready(function() {
 jQuery(window).load(function() {
 
 });
+
+jQuery(window).scroll(function(){
+	var headerHeight = jQuery('.header').outerHeight();
+	if ( jQuery(window).scrollTop() > headerHeight ) {
+		jQuery('.header').addClass('fixed');
+	} else {
+		jQuery('.header').removeClass('fixed');
+	}
+})

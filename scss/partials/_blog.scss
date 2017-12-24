@@ -1,7 +1,14 @@
 body {
 	&.single-post {
 		.blog-title .page-title {
-			font-size: 32px;
+			font-size: 24px;
+			line-height: 1.6;
+			@media #{$md}{
+				font-size: 28px;
+			}
+			@media #{$lg}{
+				font-size: 32px;
+			}
 		}
 	}
 }
@@ -36,16 +43,29 @@ body {
 		}
 	}
 	.meta-date {
-		margin-right: 32px;
+		@media #{$md}{
+			margin-right: 32px;
+		}
 	}
 	.meta-category,
 	.meta-date {
+		display: block;
+		margin: 0 0 8px 0;
+		@media #{$md}{
+			display: inline-block;
+			margin: 0 16px 0 0;
+		}
 		img {
-			margin-right: 8px;
-			width: 32px;
-			height: 32px;
 			position: relative;
 			top: -2px;
+			width: 24px;
+			height: 24px;
+			margin-right: 4px;
+			@media #{$md}{
+				margin-right: 8px;
+				width: 32px;
+				height: 32px;
+			}
 		}
 	}
 }

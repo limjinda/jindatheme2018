@@ -29,8 +29,23 @@
 	}
 	h1,h2,h3,h4,h5,h6 {
 		margin: 32px 0 16px;
+		line-height: 1.6;
 		&:first-child {
 			margin-top: 0;
+		}
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 1.5;
+		@media #{$lg}{
+			font-size: 28px;
+		}
+	}
+	h3 {
+		font-size: 20px;
+		line-height: 1.5;
+		@media #{$lg}{
+			font-size: 24px;
 		}
 	}
 	figure {

@@ -81,43 +81,42 @@ var initMap = function() {
 	});
 };
 
-var resizeFunction = function(){
-
+var checkFixedHeader = function() {
 	var headerHeight = 0;
 
-	if ( jQuery('.hero-block').length > 0 ) headerHeight = jQuery('.hero-block').outerHeight();
+	if (jQuery('.hero-block').length > 0)
+		headerHeight = jQuery('.hero-block').outerHeight();
 	else headerHeight = jQuery('.header').outerHeight();
 
-	if ( jQuery(window).scrollTop() > headerHeight ) {
+	if (jQuery(window).scrollTop() > headerHeight) {
 		jQuery('.header').addClass('fixed');
 	} else {
 		jQuery('.header').removeClass('fixed');
 	}
-}
+};
 
 jQuery(document).ready(function() {
-
-	if ( jQuery('#web_animate').length > 0 ) {
+	if (jQuery('#web_animate').length > 0) {
 		var webAnimation = bodymovin.loadAnimation({
 			container: document.getElementById('web_animate'),
 			renderer: 'svg',
-		  loop: true,
-		  autoplay: true,
-		  path: themeVariables.home_url + '/animate/web/data.json'
+			loop: true,
+			autoplay: true,
+			path: themeVariables.home_url + '/animate/web/data.json'
 		});
 		var appAnimation = bodymovin.loadAnimation({
 			container: document.getElementById('app_animate'),
 			renderer: 'svg',
-		  loop: true,
-		  autoplay: true,
-		  path: themeVariables.home_url + '/animate/app/data.json'
+			loop: true,
+			autoplay: true,
+			path: themeVariables.home_url + '/animate/app/data.json'
 		});
 		var consultAnimation = bodymovin.loadAnimation({
 			container: document.getElementById('consult_animate'),
 			renderer: 'svg',
-		  loop: true,
-		  autoplay: true,
-		  path: themeVariables.home_url + '/animate/consult/data.json'
+			loop: true,
+			autoplay: true,
+			path: themeVariables.home_url + '/animate/consult/data.json'
 		});
 	}
 
@@ -151,7 +150,7 @@ jQuery(document).ready(function() {
 		});
 	}
 
-	if ( jQuery('.owl-carousel').length > 0 ) {
+	if (jQuery('.owl-carousel').length > 0) {
 		jQuery('.owl-carousel').owlCarousel({
 			loop: true,
 			margin: 30,
@@ -165,21 +164,21 @@ jQuery(document).ready(function() {
 				"<img src='" + themeVariables.home_url + "/img/nav-right.png' />"
 			],
 			responsive: {
-				0 : {
+				0: {
 					items: 1,
 					dots: true,
 					nav: false,
 					autoplay: true,
 					loop: true
 				},
-				768 : {
+				768: {
 					items: 3,
 					dots: true,
 					nav: false,
 					autoplay: true,
 					loop: true
-				}, 
-				1200 : {
+				},
+				1200: {
 					items: 4,
 					dots: false,
 					nav: true,
@@ -190,34 +189,37 @@ jQuery(document).ready(function() {
 		});
 	}
 
+	if (jQuery('.blog-sidebar').length > 0) {
+		jQuery('.blog-sidebar').stickit({
+			top: 101,
+			screenMinWidth: jQuery('.header').outerHeight() + 30
+		});
+	}
+
 	jQuery(document).on('click', '.nav-scroll-link a', function(e) {
 		var section = jQuery(this).attr('title');
 		var headerHeight = jQuery('.header').outerHeight();
-		if ( jQuery('#' + section).length > 0 ) {
+		if (jQuery('#' + section).length > 0) {
 			e.preventDefault();
 			var positionFromTop = jQuery('#' + section).offset().top;
-			jQuery('html, body').stop().animate(
-				{
-					scrollTop: positionFromTop - headerHeight
-				},
-				600
-			);
+			jQuery('html, body')
+				.stop()
+				.animate(
+					{
+						scrollTop: positionFromTop - headerHeight
+					},
+					600
+				);
 		}
 	});
 
-	jQuery(document).on('click', '.mobile-navigation-button', function(e){
+	jQuery(document).on('click', '.mobile-navigation-button', function(e) {
 		e.preventDefault();
 		jQuery(this).toggleClass('active');
 		jQuery('.top-navigation, .top-navigation ul').toggleClass('active');
 	});
-
 });
 
-jQuery(window).load(function() {
-
-});
-
-jQuery(window).scroll(function(){
-	clearTimeout(scrollTimer);
-	scrollTimer = setTimeout(resizeFunction, 120);
+jQuery(window).scroll(function() {
+	checkFixedHeader();
 });

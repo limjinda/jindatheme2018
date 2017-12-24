@@ -24,7 +24,7 @@
 
 			<div class="blog-content">
 				<div class="row">
-					<div class="col-sm-8">
+					<div class="col-sm-7 col-md-8">
 						<article class="entry-content">
 							<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 								<?php the_content(); ?>
@@ -49,8 +49,8 @@
 						</div>
 						<?php endif; ?>
 					</div>
-					<div class="col-sm-4">
-						<aside class="blog-sidebar">
+					<div class="col-sm-5 col-md-4 blog-sidebar">
+						<aside class="blog-sidebar-wrapper">
 							<?php get_sidebar(); ?>
 						</aside>
 					</div>

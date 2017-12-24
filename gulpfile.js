@@ -64,6 +64,7 @@ gulp.task('javascript', () => {
 			'./node_modules/isotope-layout/dist/isotope.pkgd.min.js',
 			'./node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
 			'./node_modules/owl.carousel/dist/owl.carousel.min.js',
+			'./node_modules/jquery-stickit/build/jquery.stickit.min.js',
 			'./js/main.js'
 		])
 		.pipe(plumber())

@@ -8,7 +8,9 @@ body {
 			background-image: none;
 			&.fixed {
 				position: fixed;
-				background-color: $blue;
+				background-image: linear-gradient(135deg, #2e3766 0%, #388c8f 100%);
+				padding: 16px 0;
+				// background-color: darken($blue, 10%);
 				box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 			}
 		}
@@ -26,6 +28,9 @@ body {
 }
 
 .logo-block {
+	a {
+		display: inline-block;
+	}
 	img {
 		height: 45px;
 		display: block;
@@ -50,7 +55,7 @@ body {
 	ul {
 		list-style: none;
 		padding: 12px 0;
-		margin: 16px 0 0;
+		margin: 12px 0 8px;
 		// padding: 0;
 		// margin: 0;
 		// display: none;

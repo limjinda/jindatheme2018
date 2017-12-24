@@ -19,7 +19,7 @@
 						<h2 class="page-title"><?php _e('Blog', 'jindatheme') ?></h2>
 						<p><?php _e('Sometime, we wrote about user experience, policies and products. Hope it help you to clearly understand what we do and who we are :)', 'jindatheme') ?></p>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-4 hidden-xs">
 						&nbsp;
 					</div>
 				</div>
@@ -51,7 +51,7 @@
 										array_push($cate_array, $cate->slug);
 									}
 								?>
-								<div class="col-sm-3 grid-item <?php echo join(' ', $cate_array); ?>" data-category="<?php echo join(' ', $cate_array); ?>">
+								<div class="col-xs-6 col-sm-4 col-md-3 grid-item <?php echo join(' ', $cate_array); ?>" data-category="<?php echo join(' ', $cate_array); ?>">
 									<div class="flat-card">
 										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="_image img-responsive" alt="card" /></a>
 										<div class="_content">

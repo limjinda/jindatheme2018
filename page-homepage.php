@@ -230,7 +230,7 @@
 			</ul>
 			<ul class="addon-button-list list-unstyled">
 				<?php if (get_field('enable_line', 'option')): ?>
-					<li><a href="<?php the_field('line_url', 'option') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
+					<li><a href="<?php the_field('line_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
 				<?php endif; ?>
 				<li><a href="<?php the_field('dbd_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/dbd-silver.png" alt="DBD"></a></li>
 			</ul>

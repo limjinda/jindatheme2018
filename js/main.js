@@ -82,7 +82,12 @@ var initMap = function() {
 };
 
 var resizeFunction = function(){
-	var headerHeight = jQuery('.hero-block').outerHeight();
+
+	var headerHeight = 0;
+
+	if ( jQuery('.hero-block').length > 0 ) headerHeight = jQuery('.hero-block').outerHeight();
+	else headerHeight = jQuery('.header').outerHeight();
+
 	if ( jQuery(window).scrollTop() > headerHeight ) {
 		jQuery('.header').addClass('fixed');
 	} else {

@@ -12,7 +12,8 @@ html {
 		.page-title,
 		.blog-filter-bar ul li a,
 		.footer-company p,
-		.footer-copyright p {
+		.footer-copyright p,
+		body.&.single-post .blog-title .page-title {
 			font-family: 'prompt', arial, sans-serif;
 		}
 	}

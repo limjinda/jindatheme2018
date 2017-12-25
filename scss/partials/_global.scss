@@ -104,3 +104,8 @@ body,
 .msr {
 	font-family: 'montserrat', arial, sans-serif !important;
 }
+
+.error-page-block{ 
+	background: $black url('/img/404.jpg') center center fixed;
+	background-size: cover;
+}

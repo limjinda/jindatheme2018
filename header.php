@@ -5,13 +5,24 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="<?php echo ICL_LANGUAGE_CODE ?>"> <!--<![endif]-->
 	<head>
 	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon.png">
 	  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png">
 	  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-16x16.png">
 	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json">
 	  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/safari-pinned-tab.svg" color="#eac040">
 	  <meta name="theme-color" content="#eca040">
+	  <meta name="format-detection" content="telephone=no">
+	  <!-- facebook -->
+	  <meta property="fb:app_id" content="564475063661430">
+	  <meta property="og:url" content="https://www.jindatheme.com">
+	  <meta property="og:type" content="website">
+	  <meta property="og:title" content="Web & Mobile development by JindaTheme">
+	  <meta property="og:image" content="https://www.jindatheme.com/assets/facebook-cover.jpg">
+	  <meta property="og:description" content="handcraft digital platforms by web and mobile developer experts">
+	  <meta property="og:site_name" content="JindaTheme">
+	  <meta property="og:locale" content="en_US">
+	  <meta property="article:author" content="JindaTheme">
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class() ?>>

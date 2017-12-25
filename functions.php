@@ -222,4 +222,50 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+/**
+ * Add custom login stylesheet file
+ * and set priority to 999, higher will fire first!
+ */
+
+function jindatheme_custom_login() {
+	echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . '/css/login.css" />';
+}
+add_action('login_head', 'jindatheme_custom_login', 999);
+
+/**
+ * Change the url of the login logo
+ * in login screen
+ */
+function my_login_logo_url() {
+	return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url', 999 );
+
+function my_login_logo_url_title() {
+	return get_bloginfo('name');
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title', 999 );
+
+/**
+ * Change the error message from login screen
+ * for security reason!
+ */
+function login_error_override()
+{
+  return 'Invalid login credentials';
+}
+add_filter('login_errors', 'login_error_override', 999);
+
+/**
+ * Set remember option to checked as default
+ */
+function login_checked_remember_me() {
+	add_filter( 'login_footer', 'rememberme_checked' );
+}
+add_action( 'init', 'login_checked_remember_me' );
+
+function rememberme_checked() {
+	echo "<script>document.getElementById('rememberme').checked = true;</script>";
+}
+
 ?>

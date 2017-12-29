@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col-sm-8">
 						<h2 class="page-title"><?php _e('Blog', 'jindatheme') ?></h2>
-						<p><?php _e('Sometime, we wrote about user experience, policies and products. Hope it help you to clearly understand what we do and who we are :)', 'jindatheme') ?></p>
+						<p><?php _e('We sometimes write about user experiences, policies and products. Hope our blog helps you to understand who we are :)', 'jindatheme') ?></p>
 					</div>
 					<div class="col-sm-4 hidden-xs">
 						&nbsp;

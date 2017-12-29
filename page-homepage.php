@@ -32,8 +32,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
-					<h2><?php _e('HANDCRAFT DIGITAL PLATFORMS', 'jindatheme') ?></h2>
-					<h3><?php _e('By the software lover', 'jindatheme') ?></h3>
+					<h2><?php _e('HANDCRAFTED DIGITAL PLATFORMS', 'jindatheme') ?></h2>
+					<h3><?php _e('By software lovers', 'jindatheme') ?></h3>
 				</div>
 				<div class="col-sm-4">
 					&nbsp;
@@ -47,7 +47,7 @@
 	<div class="lead-section-block">
 		<div class="container">
 			<h1>JINDATHEME</h1>
-			<p><?php _e('We create beautiful products people would love to use', 'jindatheme') ?></p>
+			<p><?php _e('We create beautiful products people love to use', 'jindatheme') ?></p>
 		</div>
 	</div>
 
@@ -64,7 +64,7 @@
 						<div class="featured-content">
 							<p class="_title"><?php _e('Responsive Website', 'jindatheme') ?></p>
 							<p class="_description">
-								<?php _e('Super neat fully responsive website fit for all screens. Our experts will help transform your idea into a perfect gem', 'jindatheme') ?>
+								<?php _e('Super neat fully responsive website that fits all screens. Our experts will help transform your idea into a perfect gem', 'jindatheme') ?>
 							</p>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 						<div class="featured-content">
 							<p class="_title"><?php _e('Mobile App', 'jindatheme') ?></p>
 							<p class="_description">
-								<?php _e('Reach your business goal with superfine iOS and Android app, ease of use and super (user) friendly!', 'jindatheme') ?>
+								<?php _e('Reach your business goals with superfine iOS and Android apps, ease of use and super (user) friendly experience!', 'jindatheme') ?>
 							</p>
 						</div>
 					</div>
@@ -92,7 +92,7 @@
 						<div class="featured-content">
 							<p class="_title"><?php _e('Consulting', 'jindatheme') ?></p>
 							<p class="_description">
-								<?php _e('We also provide a perfect informations for our customers including server, IT infrastructure and many more', 'jindatheme') ?>
+								<?php _e('We provide sound advice for our customers on IT infrastructure, software development, go-to-market strategies and much more', 'jindatheme') ?>
 							</p>
 						</div>
 					</div>
@@ -112,7 +112,7 @@
 					<div class="content">
 						<h3 class="main-header"><?php _e('Our Clients', 'jindatheme') ?></h3>
 						<p>
-							<?php _e('It’s good to be a part of your successful, but we are over the moon when your customer says they love to use your web and mobile app.', 'jindatheme') ?>
+							<?php _e('It’s good to be a part of your success, but we are over the moon when your customer tell you they love to use your web and mobile app.', 'jindatheme') ?>
 						</p>
 						<ul class="clients-list list-unstyled">
 							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>
@@ -193,7 +193,7 @@
 				<div class="col-sm-6">
 					<h3 class="main-header">JindaTeam</h3>
 					<p>
-						<?php _e('We are young and passionate developer, who want to build a better software for the better internet.', 'jindatheme') ?>
+						<?php _e('We are young and passionate developers, who want to build great software for a better internet.', 'jindatheme') ?>
 					</p>
 					<blockquote class="quote">
 						The only way to do great work is to love what you do

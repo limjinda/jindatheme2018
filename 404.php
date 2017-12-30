@@ -1,6 +1,9 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:700|Poppins" rel="stylesheet">
 
 <style>
+	* {
+		cursor: default;
+	}
 	.error-page-block{ 
 		position: absolute;
 		top: 0;

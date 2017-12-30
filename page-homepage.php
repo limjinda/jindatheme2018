@@ -201,7 +201,7 @@
 					<p class="quote-by">— Steve Jobs</p>
 				</div>
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-team.jpg" class="img-responsive about-image" alt="About" />
+					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-team2.png" class="img-responsive about-image" alt="About" />
 				</div>
 			</div>
 		</div>

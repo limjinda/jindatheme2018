@@ -17,7 +17,7 @@
 	  <meta property="og:url" content="https://www.jindatheme.com">
 	  <meta property="og:type" content="website">
 	  <meta property="og:title" content="Web & Mobile development by JindaTheme">
-	  <meta property="og:image" content="https://www.jindatheme.com/assets/facebook-cover.jpg">
+	  <meta property="og:image" content="https://www.jindatheme.com/assets/facebook-cover.png">
 	  <meta property="og:description" content="handcraft digital platforms by web and mobile developer experts">
 	  <meta property="og:site_name" content="JindaTheme">
 	  <meta property="og:locale" content="en_US">

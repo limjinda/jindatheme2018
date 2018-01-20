@@ -201,7 +201,61 @@
 					<p class="quote-by">— Steve Jobs</p>
 				</div>
 				<div class="col-sm-6">
-					<img src="<?php echo get_template_directory_uri() ?>/img/mockup-team2.png" class="img-responsive about-image" alt="About" />
+					<div class="team-info-block">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="avatar-left-block">
+									<img src="<?php echo get_template_directory_uri() ?>/img/avatar-product.png" alt="Product Lead" />
+									<div class="team-info">
+										<p class="_name">Jirayu Limjinda</p>
+										<p class="_title"><?php _e('Product Lead', 'jindatheme') ?></p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="avatar-left-block">
+									<img src="<?php echo get_template_directory_uri() ?>/img/avatar-technical.png" alt="Product Lead" />
+									<div class="team-info">
+										<p class="_name">Pawit Khid-arn</p>
+										<p class="_title"><?php _e('Technical Lead', 'jindatheme') ?></p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="expertise-block">
+						<h3 class="block-header">
+							<img src="<?php echo get_template_directory_uri() ?>/img/icon-expertise.png" alt="Our Expertise" />
+							<?php _e('Our Expertise', 'jindatheme') ?>
+						</h3>
+						<div class="expertise-row">
+							<span>Ruby on Rails</span>
+							<div class="percentage-bar rails"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="expertise-row">
+							<span>WordPress</span>
+							<div class="percentage-bar wordpress"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="expertise-row">
+							<span>UI/UX Design</span>
+							<div class="percentage-bar uiux"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="expertise-row">
+							<span>Responsive Website</span>
+							<div class="percentage-bar responsive"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="expertise-row">
+							<span>Jolliness</span>
+							<div class="percentage-bar happiness"></div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

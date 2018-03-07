@@ -574,6 +574,7 @@
 				height: 32px;
 				display: block;
 				@media #{$sm}{
+					width: auto;
 					height: 40px;
 				}
 			}

@@ -286,7 +286,7 @@
 				<?php if (get_field('enable_line', 'option')): ?>
 					<li><a href="<?php the_field('line_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
 				<?php endif; ?>
-				<li><script src="https://www.trustmarkthai.com/callbackData/initialize.js?t=fcdcc70d-38-5-cf91449dc480595798eb4f45328f9e481186a" id="dbd-init"></script><div id="Certificate-banners"></div></li>
+				<li><script src="https://www.trustmarkthai.com/callbackData/initialize.js?t=42c-38-5-6a926038faaeaea2f57cb8fb483d469abf92522522" id="dbd-init"></script><div id="Certificate-banners"></div></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>

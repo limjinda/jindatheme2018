@@ -50,3 +50,9 @@ a {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
 	background: $white;
 }
+
+#Certificate-banners {
+	a {
+		display: inline-block !important;
+	}
+}

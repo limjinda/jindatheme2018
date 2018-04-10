@@ -205,7 +205,6 @@ jQuery(window).scroll(function() {
 });
 
 jQuery(document).on('click', '#map-canvas', function() {
-	console.log(canLoadMaps);
 	if (canLoadMaps) {
 		jQuery.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq_YDQn6963EdIfS7WbiJpiR5MORtx7Q&callback=initMap');
 		canLoadMaps = false;

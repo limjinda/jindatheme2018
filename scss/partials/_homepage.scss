@@ -476,6 +476,9 @@
 		position: relative;
 		border: 1px solid $bd;
 		border-width: 1px 1px 0 0;
+		background: url('img/static-maps.jpg') no-repeat center center;
+		background-size: cover;
+		cursor: pointer;
 		@media #{$sm}{
 			height: 350px;
 		}

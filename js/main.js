@@ -1,6 +1,7 @@
 'use strict';
 
 var scrollTimer;
+var canLoadMaps = true;
 
 var initMap = function() {
 	var jindatheme = { lat: 13.902299, lng: 100.516311 };
@@ -201,4 +202,12 @@ jQuery(window).load(function(){
 
 jQuery(window).scroll(function() {
 	checkFixedHeader();
+});
+
+jQuery(document).on('click', '#map-canvas', function() {
+	console.log(canLoadMaps);
+	if (canLoadMaps) {
+		jQuery.getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq_YDQn6963EdIfS7WbiJpiR5MORtx7Q&callback=initMap');
+		canLoadMaps = false;
+	}
 });

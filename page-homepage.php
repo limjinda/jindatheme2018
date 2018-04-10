@@ -294,5 +294,3 @@
 </main>
 
 <?php get_footer(); ?>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCq_YDQn6963EdIfS7WbiJpiR5MORtx7Q&callback=initMap"></script>

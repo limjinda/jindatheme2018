@@ -9,7 +9,7 @@ function jindatheme_template_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'jindatheme-portfolio-cover', 540, 540, array('center', 'center') );
+	add_image_size( 'jindatheme-portfolio-cover', 263, 263, array('center', 'center') );
 	register_nav_menus( array(
 		'top'    => __( 'Top navigation', 'jindatheme' ),
 	) );

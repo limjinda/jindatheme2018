@@ -96,29 +96,6 @@ var checkFixedHeader = function() {
 };
 
 jQuery(document).ready(function() {
-	if (jQuery('#web_animate').length > 0) {
-		var webAnimation = bodymovin.loadAnimation({
-			container: document.getElementById('web_animate'),
-			renderer: 'svg',
-			loop: true,
-			autoplay: true,
-			path: themeVariables.home_url + '/animate/web/data.json'
-		});
-		var appAnimation = bodymovin.loadAnimation({
-			container: document.getElementById('app_animate'),
-			renderer: 'svg',
-			loop: true,
-			autoplay: true,
-			path: themeVariables.home_url + '/animate/app/data.json'
-		});
-		var consultAnimation = bodymovin.loadAnimation({
-			container: document.getElementById('consult_animate'),
-			renderer: 'svg',
-			loop: true,
-			autoplay: true,
-			path: themeVariables.home_url + '/animate/consult/data.json'
-		});
-	}
 
 	if (jQuery('.portfolio-block').length > 0) {
 		jQuery('.portfolio-block').magnificPopup({

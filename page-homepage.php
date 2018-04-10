@@ -58,7 +58,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<div id="web_animate"></div>
+							<img src="<?php echo get_template_directory_uri() ?>/img/gif/website.gif" alt="Web development" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -72,7 +72,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<div id="app_animate"></div>
+							<img src="<?php echo get_template_directory_uri() ?>/img/gif/app.gif" alt="Application" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -86,7 +86,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<div id="consult_animate"></div>
+							<img src="<?php echo get_template_directory_uri() ?>/img/gif/consult.gif" alt="Consulting" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">

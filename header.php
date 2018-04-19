@@ -6,6 +6,7 @@
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta http-equiv="Content-Security-Policy" content="default-src https:">
 	  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon.png">
 	  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png?v=2" />
 	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json">

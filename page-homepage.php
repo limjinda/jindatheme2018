@@ -273,20 +273,20 @@
 			</ul>
 			<ul class="social-list list-unstyled">
 				<?php if (get_field('enable_facebook', 'option')): ?>
-					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-facebook.png" alt="Facebook"></a></li>
+					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank"><span class="i-facebook"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_github', 'option')): ?>
-					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-github.png" alt="Github"></a></li>
+					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank"><span class="i-github"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_instagram', 'option')): ?>
-					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/icon-instagram.png" alt="Instagram"></a></li>
+					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank"><span class="i-instagram"></span></a></li>
 				<?php endif ?>
 			</ul>
 			<ul class="addon-button-list list-unstyled">
 				<?php if (get_field('enable_line', 'option')): ?>
 					<li><a href="<?php the_field('line_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
 				<?php endif; ?>
-				<li><script src="https://www.trustmarkthai.com/callbackData/initialize.js?t=42c-38-5-6a926038faaeaea2f57cb8fb483d469abf92522522" id="dbd-init"></script><div id="Certificate-banners"></div></li>
+				<li><a href="https://www.trustmarkthai.com/callbackData/popup.php?data=42c-38-5-6a926038faaeaea2f57cb8fb483d469abf92522522" title="DBD trustmarkthai" target="_blank"><span class="i-dbd"></span></a></li>
 			</ul>
 		</div>
 		<div class="clearfix"></div>

@@ -122,8 +122,8 @@ jQuery(document).ready(function() {
 			autoplay: true,
 			autoplaySpeed: 1200,
 			navText: [
-				"<img src='" + themeVariables.home_url + "/img/nav-left.png' />",
-				"<img src='" + themeVariables.home_url + "/img/nav-right.png' />"
+				"<span class='i-nav-left'></span>",
+				"<span class='i-nav-right'></span>"
 			],
 			responsive: {
 				0: {

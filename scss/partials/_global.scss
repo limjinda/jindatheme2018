@@ -108,6 +108,60 @@ body,
 }
 
 .error-page-block{ 
-	background: $black url('/img/404.jpg') center center fixed;
+	background: $black url('img/404.jpg') center center fixed;
 	background-size: cover;
+}
+
+.i-facebook {
+	background: url('img/mice-sprite.png') no-repeat 0 0;
+	background-size: 175px 80px;
+	width: 32px;
+	height: 32px;
+	content: '';
+	display: block;
+}
+
+.i-github {
+	background: url('img/mice-sprite.png') no-repeat -37px 0;
+	background-size: 175px 80px;
+	width: 32px;
+	height: 32px;
+	content: '';
+	display: block;
+}
+
+.i-instagram {
+	background: url('img/mice-sprite.png') no-repeat -74px 0;
+	background-size: 175px 80px;
+	width: 32px;
+	height: 32px;
+	content: '';
+	display: block;
+}
+
+.i-dbd {
+	background: url('img/mice-sprite.png') no-repeat 0 -46px;
+	background-size: 175px 80px;
+	width: 162px;
+	height: 34px;
+	content: '';
+	display: block;
+}
+
+.i-nav-left {
+	background: url('img/mice-sprite.png') no-repeat -111px 0;
+	background-size: 175px 80px;
+	width: 24px;
+	height: 40px;
+	content: '';
+	display: block;
+}
+
+.i-nav-right {
+	background: url('img/mice-sprite.png') no-repeat -140px 0;
+	background-size: 175px 80px;
+	width: 24px;
+	height: 40px;
+	content: '';
+	display: block;
 }

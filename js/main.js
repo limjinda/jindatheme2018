@@ -98,6 +98,8 @@ var checkFixedHeader = function() {
 
 jQuery(document).ready(function() {
 
+	console.log("%cDeveloped and Maintained by JindaTheme 🤓","font-size:12px; color: #e7a12e; font-weight: bold; font-family: Century Gothic, sans-serif;"),console.log("%cvisit us on https://www.jindatheme.com","font-size:9px; color: #888888; font-family: Century Gothic, sans-serif;");
+
 	if (jQuery('.portfolio-block').length > 0) {
 		jQuery('.portfolio-block').magnificPopup({
 			delegate: 'a.image-popup',

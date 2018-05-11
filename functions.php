@@ -268,4 +268,9 @@ function rememberme_checked() {
 	echo "<script>document.getElementById('rememberme').checked = true;</script>";
 }
 
+/**
+ * Remove wordpress generator meta tag
+ */
+remove_action('wp_head', 'wp_generator');
+
 ?>

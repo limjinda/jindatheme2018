@@ -32,8 +32,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8">
-					<h2><?php _e('HANDCRAFTED DIGITAL PLATFORMS', 'jindatheme') ?></h2>
-					<h3><?php _e('By software lovers', 'jindatheme') ?></h3>
+					<h1><?php _e('HANDCRAFTED DIGITAL PLATFORMS', 'jindatheme') ?></h1>
+					<h2><?php _e('By software lovers', 'jindatheme') ?></h2>
 				</div>
 				<div class="col-sm-4">
 					&nbsp;
@@ -46,7 +46,7 @@
 	<!-- intro -->
 	<div class="lead-section-block">
 		<div class="container">
-			<h1>JINDATHEME</h1>
+			<h2>JINDATHEME</h2>
 			<p><?php _e('We create beautiful products people love to use', 'jindatheme') ?></p>
 		</div>
 	</div>

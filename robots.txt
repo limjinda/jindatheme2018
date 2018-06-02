@@ -1,0 +1,8 @@
+
+User-Agent: *
+Allow: /
+Disallow: /wp-admin
+Disallow: /wp-included
+Disallow: /backend
+
+Sitemap: https://www.jindatheme.com/sitemap.xml

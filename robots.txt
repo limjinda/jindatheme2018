@@ -4,5 +4,7 @@ Allow: /
 Disallow: /wp-admin
 Disallow: /wp-included
 Disallow: /backend
+Disallow: /demo
+Disallow: /demo/*
 
 Sitemap: https://www.jindatheme.com/sitemap.xml

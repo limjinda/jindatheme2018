@@ -8,9 +8,12 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon.png">
 	  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png?v=2" />
-	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json">
-	  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/safari-pinned-tab.svg" color="#eac040">
+	  <!-- <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json"> -->
+	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/js/manifest.json">
+	  <meta name="mobile-web-app-capable" content="yes">
+   	<meta name="apple-mobile-web-app-capable" content="yes">
 	  <meta name="theme-color" content="#eca040">
+	  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/safari-pinned-tab.svg" color="#eac040">
 	  <meta name="format-detection" content="telephone=no">
 	  <!-- facebook -->
 	  <meta property="fb:app_id" content="564475063661430">
@@ -29,6 +32,23 @@
 	  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	  })(window,document,'script','dataLayer','GTM-5KK4DN');</script>
 	  <!-- End Google Tag Manager -->
+	  <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('<?php echo get_template_directory_uri() ?>/js/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          }).catch(function(err) {
+            console.log(err)
+          });
+        });
+      } else {
+        console.log('service worker is not supported');
+      }
+    </script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class() ?>>
@@ -36,8 +56,6 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KK4DN"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
-		<div id="fb-root"></div>
-		
 		<div class="wrapper">
 			<header class="header">
 				<div class="container">

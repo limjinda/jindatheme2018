@@ -118,7 +118,7 @@
 							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>
 								<li><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/115x50' ?>" class="client-image" alt="<?php the_title(); ?>"></li>
 							<?php endwhile; wp_reset_postdata(); endif; ?>
-							<div class="clearfix"></div>
+							<li class="clearfix"></li>
 						</ul>
 					</div>
 				</div>
@@ -273,13 +273,13 @@
 			</ul>
 			<ul class="social-list list-unstyled">
 				<?php if (get_field('enable_facebook', 'option')): ?>
-					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank"><span class="i-facebook"></span></a></li>
+					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank" name="JindaTheme on Facebook"><span class="i-facebook"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_github', 'option')): ?>
-					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank"><span class="i-github"></span></a></li>
+					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank" name="JindaTheme on Github"><span class="i-github"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_instagram', 'option')): ?>
-					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank"><span class="i-instagram"></span></a></li>
+					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank" name="JindaTheme on Instagram"><span class="i-instagram"></span></a></li>
 				<?php endif ?>
 			</ul>
 			<ul class="addon-button-list list-unstyled">

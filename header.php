@@ -6,15 +6,21 @@
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon.png">
-	  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png?v=2" />
-	  <!-- <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/img/favicons/manifest.json"> -->
-	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/js/manifest.json">
 	  <meta name="mobile-web-app-capable" content="yes">
    	<meta name="apple-mobile-web-app-capable" content="yes">
 	  <meta name="theme-color" content="#eca040">
-	  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/img/favicons/safari-pinned-tab.svg" color="#eac040">
 	  <meta name="format-detection" content="telephone=no">
+	  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-57x57.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-114x114.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-72x72.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-144x144.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-120x120.png" />
+	  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-152x152.png" />
+	  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png" sizes="32x32" />
+	  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-16x16.png" sizes="16x16" />
+	  <meta name="application-name" content="Web and mobile development by JindaTheme"/>
+	  <meta name="msapplication-TileColor" content="#FFFFFF" />
+	  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/img/favicons/mstile-144x144.png" />
 	  <!-- facebook -->
 	  <meta property="fb:app_id" content="564475063661430">
 	  <meta property="og:url" content="https://www.jindatheme.com">
@@ -25,6 +31,7 @@
 	  <meta property="og:site_name" content="JindaTheme">
 	  <meta property="og:locale" content="en_US">
 	  <meta property="article:author" content="JindaTheme">
+	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/js/manifest.json">
 	  <!-- Google Tag Manager -->
 	  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

@@ -31,7 +31,6 @@
 	  <meta property="og:site_name" content="JindaTheme">
 	  <meta property="og:locale" content="en_US">
 	  <meta property="article:author" content="JindaTheme">
-	  <link rel="manifest" href="<?php echo get_template_directory_uri() ?>/js/manifest.json">
 	  <!-- Google Tag Manager -->
 	  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,23 +38,6 @@
 	  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	  })(window,document,'script','dataLayer','GTM-5KK4DN');</script>
 	  <!-- End Google Tag Manager -->
-	  <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('<?php echo get_template_directory_uri() ?>/js/sw.js').then(function(registration) {
-            // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-          }).catch(function(err) {
-            console.log(err)
-          });
-        });
-      } else {
-        console.log('service worker is not supported');
-      }
-    </script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class() ?>>

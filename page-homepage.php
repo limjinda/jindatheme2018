@@ -118,7 +118,6 @@
 							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>
 								<li><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/115x50' ?>" class="client-image" alt="<?php the_title(); ?>"></li>
 							<?php endwhile; wp_reset_postdata(); endif; ?>
-							<li class="clearfix"></li>
 						</ul>
 					</div>
 				</div>

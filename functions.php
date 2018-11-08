@@ -27,10 +27,12 @@ add_action( 'after_setup_theme', 'jindatheme_template_setup' );
  * including main theme and vendor files.
  */
 function jindatheme_register_scripts() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', get_theme_file_uri('/js/vendor/jquery.min.js'), false, NULL, true);
+	wp_enqueue_script('jquery');
+
 	wp_enqueue_style('vendor', get_theme_file_uri('/css/vendor.css'));
 	wp_enqueue_style('jindatheme-style', get_stylesheet_uri());
-
-	// add_filter('style_loader_tag', 'change_loader_rel_tag');
 
 	wp_register_script('client', get_theme_file_uri( '/js/clients.js' ), array('jquery'), '1.0.0', true );
 	$js_variables = array(
@@ -40,10 +42,6 @@ function jindatheme_register_scripts() {
 	wp_enqueue_script('client');
 }
 add_action('wp_enqueue_scripts', 'jindatheme_register_scripts');
-
-// function change_loader_rel_tag($tag) {
-// 	return preg_replace("/='stylesheet' id='jindatheme-style-css'/", "='preload' id='jindatheme-style-css'", $tag);
-// }
 
 /**
  * Register widget, a blog sidebar

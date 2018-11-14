@@ -134,7 +134,7 @@
 					<div class="portfolio-card">
 						<figure>
 							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
-								<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive lazy" alt="<?php the_title(); ?>" />
+								<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
 							</a>
 						</figure>
 						<div class="portfolio-content">
@@ -272,13 +272,13 @@
 			</ul>
 			<ul class="social-list list-unstyled">
 				<?php if (get_field('enable_facebook', 'option')): ?>
-					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank" name="JindaTheme on Facebook"><span class="i-facebook"></span></a></li>
+					<li><a href="<?php the_field('facebook_url', 'option') ?>" target="_blank" title="JindaTheme on Facebook"><span class="i-facebook"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_github', 'option')): ?>
-					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank" name="JindaTheme on Github"><span class="i-github"></span></a></li>
+					<li><a href="<?php the_field('github_url', 'option') ?>" target="_blank" title="JindaTheme on Github"><span class="i-github"></span></a></li>
 				<?php endif ?>
 				<?php if (get_field('enable_instagram', 'option')): ?>
-					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank" name="JindaTheme on Instagram"><span class="i-instagram"></span></a></li>
+					<li><a href="<?php the_field('instagram_url', 'option') ?>" target="_blank" title="JindaTheme on Instagram"><span class="i-instagram"></span></a></li>
 				<?php endif ?>
 			</ul>
 			<ul class="addon-button-list list-unstyled">

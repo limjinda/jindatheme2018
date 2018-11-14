@@ -32,7 +32,8 @@
     "jquery-stickit": "^0.2.62",
     "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.2.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "vanilla-lazyload": "^8.17.0"
   },
   "devDependencies": {
     "gulp-clean": "^0.3.2",

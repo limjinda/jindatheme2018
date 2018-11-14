@@ -39,7 +39,7 @@
 					&nbsp;
 				</div>
 			</div>
-			<img src="<?php echo get_template_directory_uri() ?>/img/hero-image.png" class="hero-image" alt="JindaTheme" />
+			<img data-src="<?php echo get_template_directory_uri() ?>/img/hero-image.png" class="hero-image lazy" alt="JindaTheme" />
 		</div>
 	</div>
 
@@ -58,7 +58,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="<?php echo get_template_directory_uri() ?>/img/gif/website.gif" alt="Web development" />
+							<img data-src="<?php echo get_template_directory_uri() ?>/img/gif/website.gif" alt="Web development" class="lazy" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -72,7 +72,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="<?php echo get_template_directory_uri() ?>/img/gif/app.gif" alt="Application" />
+							<img data-src="<?php echo get_template_directory_uri() ?>/img/gif/app.gif" alt="Application" class="lazy" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -86,7 +86,7 @@
 				<div class="col-sm-4">
 					<div class="featured-card">
 						<figure>
-							<img src="<?php echo get_template_directory_uri() ?>/img/gif/consult.gif" alt="Consulting" />
+							<img data-src="<?php echo get_template_directory_uri() ?>/img/gif/consult.gif" alt="Consulting" class="lazy" />
 							<span class="grey-background"></span>
 						</figure>
 						<div class="featured-content">
@@ -106,7 +106,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<img src="<?php echo get_template_directory_uri() ?>/img/works-image.png" class="img-responsive work-imagery" alt="Works" />
+					<img data-src="<?php echo get_template_directory_uri() ?>/img/works-image.png" class="img-responsive work-imagery lazy" alt="Works" />
 				</div>
 				<div class="col-sm-5">
 					<div class="content">
@@ -116,7 +116,7 @@
 						</p>
 						<ul class="clients-list list-unstyled">
 							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>
-								<li><img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/115x50' ?>" class="client-image" alt="<?php the_title(); ?>"></li>
+								<li><img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/115x50' ?>" class="client-image lazy" alt="<?php the_title(); ?>" /></li>
 							<?php endwhile; wp_reset_postdata(); endif; ?>
 						</ul>
 					</div>
@@ -134,7 +134,7 @@
 					<div class="portfolio-card">
 						<figure>
 							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
-								<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
+								<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive lazy" alt="<?php the_title(); ?>" />
 							</a>
 						</figure>
 						<div class="portfolio-content">
@@ -151,8 +151,8 @@
 							<p class="_link"><?php the_field('link'); ?></p>
 						</div>
 						<figure>
-							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
-								<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
+							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup lazy" title="<?php the_title(); ?>">
+								<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive lazy" alt="<?php the_title(); ?>" />
 							</a>
 						</figure>
 					</div>
@@ -171,7 +171,7 @@
 				<!-- people card -->
 				<div class="col-sm-4">
 					<div class="testimonial-card">
-						<img src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : 'https://www.placehold.it/140x262' ?>" class="eq-content" alt="<?php the_title(); ?>" />
+						<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url() : 'https://www.placehold.it/140x262' ?>" class="eq-content lazy" alt="<?php the_title(); ?>" />
 						<div class="content eq-content">
 							<p class="_name"><?php the_title(); ?></p>
 							<p class="_title"><?php the_field('title') ?></p>
@@ -204,7 +204,7 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="avatar-left-block">
-									<img src="<?php echo get_template_directory_uri() ?>/img/avatar-product.png" alt="Product Lead" />
+									<img data-src="<?php echo get_template_directory_uri() ?>/img/avatar-product.png" alt="Product Lead" class="lazy" />
 									<div class="team-info">
 										<p class="_name">Jirayu Limjinda</p>
 										<p class="_title"><?php _e('Product Lead', 'jindatheme') ?></p>
@@ -214,7 +214,7 @@
 							</div>
 							<div class="col-sm-6">
 								<div class="avatar-left-block">
-									<img src="<?php echo get_template_directory_uri() ?>/img/avatar-technical.png" alt="Product Lead" />
+									<img data-src="<?php echo get_template_directory_uri() ?>/img/avatar-technical.png" alt="Product Lead" class="lazy" />
 									<div class="team-info">
 										<p class="_name">Pawit Khid-arn</p>
 										<p class="_title"><?php _e('Technical Lead', 'jindatheme') ?></p>
@@ -226,7 +226,7 @@
 					</div>
 					<div class="expertise-block">
 						<h3 class="block-header">
-							<img src="<?php echo get_template_directory_uri() ?>/img/icon-expertise.png" alt="Our Expertise" />
+							<img data-src="<?php echo get_template_directory_uri() ?>/img/icon-expertise.png" alt="Our Expertise" class="lazy" />
 							<?php _e('Our Expertise', 'jindatheme') ?>
 						</h3>
 						<div class="expertise-row">
@@ -283,7 +283,7 @@
 			</ul>
 			<ul class="addon-button-list list-unstyled">
 				<?php if (get_field('enable_line', 'option')): ?>
-					<li><a href="<?php the_field('line_url', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line"></a></li>
+					<li><a href="<?php the_field('line_url', 'option') ?>" target="_blank"><img data-src="<?php echo get_template_directory_uri() ?>/img/line-add.png" alt="Add line" class="lazy"></a></li>
 				<?php endif; ?>
 				<li><a href="https://www.trustmarkthai.com/callbackData/popup.php?data=42c-38-5-6a926038faaeaea2f57cb8fb483d469abf92522522" title="DBD trustmarkthai" target="_blank"><span class="i-dbd"></span></a></li>
 			</ul>

@@ -151,8 +151,8 @@
 							<p class="_link"><?php the_field('link'); ?></p>
 						</div>
 						<figure>
-							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup lazy" title="<?php the_title(); ?>">
-								<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive lazy" alt="<?php the_title(); ?>" />
+							<a href="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'full') : 'https://www.placehold.it/540x540' ?>" class="image-popup" title="<?php the_title(); ?>">
+								<img data-src="<?php echo has_post_thumbnail() ? get_the_post_thumbnail_url($post->ID, 'jindatheme-portfolio-cover') : 'https://www.placehold.it/540x540' ?>" class="img-responsive" alt="<?php the_title(); ?>" />
 							</a>
 						</figure>
 					</div>

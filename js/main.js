@@ -99,7 +99,7 @@ var checkFixedHeader = function() {
 jQuery(document).ready(function() {
 
 	var myLazyLoad = new LazyLoad({
-	    elements_selector: ".lazy"
+    elements_selector: ".lazy"
 	});
 
 	if (jQuery('.portfolio-block').length > 0) {

@@ -119,6 +119,7 @@ jQuery(document).ready(function() {
 	if (jQuery('.owl-carousel').length > 0) {
 		jQuery('.owl-carousel').owlCarousel({
 			loop: true,
+			lazyLoad: true,
 			margin: 30,
 			items: 4,
 			dots: false,

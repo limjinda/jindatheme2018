@@ -21,16 +21,6 @@
 	  <meta name="application-name" content="Web and mobile development by JindaTheme"/>
 	  <meta name="msapplication-TileColor" content="#FFFFFF" />
 	  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/img/favicons/mstile-144x144.png" />
-	  <!-- facebook -->
-	  <meta property="fb:app_id" content="564475063661430">
-	  <meta property="og:url" content="https://www.jindatheme.com">
-	  <meta property="og:type" content="website">
-	  <meta property="og:title" content="Web & Mobile development by JindaTheme">
-	  <meta property="og:image" content="https://www.jindatheme.com/assets/facebook-cover.png">
-	  <meta property="og:description" content="handcraft digital platforms by web and mobile developer experts">
-	  <meta property="og:site_name" content="JindaTheme">
-	  <meta property="og:locale" content="en_US">
-	  <meta property="article:author" content="JindaTheme">
 	  <!-- Google Tag Manager -->
 	  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

@@ -10,6 +10,9 @@
    	<meta name="apple-mobile-web-app-capable" content="yes">
 	  <meta name="theme-color" content="#eca040">
 	  <meta name="format-detection" content="telephone=no">
+	  <meta name="application-name" content="Web and mobile development by JindaTheme"/>
+	  <meta name="msapplication-TileColor" content="#FFFFFF" />
+	  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/img/favicons/mstile-144x144.png" />
 	  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-57x57.png" />
 	  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-114x114.png" />
 	  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-72x72.png" />
@@ -18,9 +21,7 @@
 	  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo get_template_directory_uri() ?>/img/favicons/apple-touch-icon-152x152.png" />
 	  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-32x32.png" sizes="32x32" />
 	  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/img/favicons/favicon-16x16.png" sizes="16x16" />
-	  <meta name="application-name" content="Web and mobile development by JindaTheme"/>
-	  <meta name="msapplication-TileColor" content="#FFFFFF" />
-	  <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() ?>/img/favicons/mstile-144x144.png" />
+	  <link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon.ico?v=1.1"> 
 	  <!-- Google Tag Manager -->
 	  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

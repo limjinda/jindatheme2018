@@ -112,7 +112,7 @@
 					<div class="content">
 						<h3 class="main-header"><?php _e('Our Clients', 'jindatheme') ?></h3>
 						<p>
-							<?php _e('It’s good to be a part of your success, but we are over the moon when your customer tell you they love to use your web and mobile app.', 'jindatheme') ?>
+							<?php _e('It’s good to be a part of your success, but we are over the moon when your customers tell you they love to use your web and mobile app.', 'jindatheme') ?>
 						</p>
 						<ul class="clients-list list-unstyled">
 							<?php if ($clients->have_posts()): while ($clients->have_posts()): $clients->the_post(); ?>

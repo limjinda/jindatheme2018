@@ -165,7 +165,7 @@
 	<!-- testimonial -->
 	<div class="testimonial-block" id="testimonials">
 		<div class="container">
-			<h3 class="main-header"><?php _e('Testimonial', 'jindatheme') ?></h3>
+			<h3 class="main-header"><?php _e('Testimonials', 'jindatheme') ?></h3>
 			<div class="row">
 				<?php if ($testimonials->have_posts()): while($testimonials->have_posts()): $testimonials->the_post(); ?>
 				<!-- people card -->
